@@ -1,0 +1,556 @@
+/*--------------------------------------------------------------メインビジュアル*/
+#sub-mv {
+  padding: 7rem 0;
+  background-position: center !important;
+  background-size: cover !important;
+}
+
+#sub-mv.room {
+  background: url('../images/room/sub_mv.png');
+}
+
+#sub-mv.floor {
+  background: url('../images/floor/sub_mv.png');
+}
+
+#sub-mv.kyoto {
+  background: url('../images/kyoto/sub_mv.png');
+}
+
+#sub-mv h2 {
+  font-size: 160%;
+  margin: 0
+}
+
+#sub-mv p {
+  margin: 10px 0 0 0
+}
+
+@media(max-width:768px) {
+  /*--スマホよこ--*/
+}
+
+@media(max-width:480px) {
+  /*--スマホたて--*/
+}
+
+/*--------------------------------------------------------------アバウト*/
+#about {
+  width: 80%;
+  margin: 3rem auto 0 auto;
+  box-sizing: border-box;
+}
+
+#about .layout-01 .text-box {
+  width: 40%
+}
+
+#about .layout-01>p {
+  width: 60%;
+  margin: 6rem 0 0 0;
+}
+
+#about .text-box p:last-child br {
+  display: block;
+}
+
+@media(max-width:768px) {
+
+  /*--スマホよこ--*/
+  #about {
+    width: 100%;
+  }
+}
+
+@media(max-width:480px) {
+
+  /*--スマホたて--*/
+  #about {
+    margin: 30px auto;
+  }
+
+  #about .layout-01 .text-box {
+    width: 100%
+  }
+
+  #about .layout-01>p {
+    width: 100%;
+    margin: 2rem 0 0 0;
+  }
+}
+
+/*--------------------------------------------------------------客室情報*/
+#type>.flex {
+  align-items: center;
+}
+
+#type>.flex .text-box {
+  margin: 0 3rem;
+}
+
+#type>div>div:nth-child(1) {
+  width: 80%;
+  margin: 3rem auto;
+}
+
+#type>div>div:nth-child(1) .text-box {
+  width: 45%;
+  margin: 0 0 0 -3rem;
+}
+
+@media(max-width:768px) {
+
+  /*--スマホよこ--*/
+  #type>.flex {
+    flex-wrap: wrap;
+  }
+
+  #type>.flex .text-box {
+    margin: 0 15px 3rem 15px;
+    width: 100%
+  }
+
+  #type .text-box p:last-child {
+    margin: 2rem 0 0 2rem
+  }
+
+  #type>div>div:nth-child(1) .images-wrap {
+    z-index: -1
+  }
+
+  #type>div>div:nth-child(1) .images-wrap img {
+    margin: -8rem 0 0px 55px;
+  }
+
+  #type>div>div:nth-child(2) {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  #type>div>div:nth-child(2) .text-box {
+    margin: -3rem 0 0 0;
+    width: 100%
+  }
+}
+
+@media(max-width:480px) {
+
+  /*--スマホたて--*/
+  #type>div>div:nth-child(1) .text-box {
+    width: 100%;
+    margin: 0 0 0 -15px;
+  }
+}
+
+/*--------------------------------------------------------------館内案内*/
+#inside ul li {
+  width: 30%
+}
+
+#inside ul li img {
+  width: 100%
+}
+
+#inside ul li:nth-child(1) {
+  margin-top: -3rem
+}
+
+#inside ul li:nth-child(2) {
+  margin-top: -1.5rem
+}
+
+#gallery ul li {
+  height: 190px !important;
+  background-position: center !important;
+  background-size: cover !important;
+}
+
+#gallery .photo-01 {
+  background: url('../images/floor/slide_01.png')
+}
+
+#gallery .photo-02 {
+  background: url('../images/floor/slide_02.png')
+}
+
+#gallery .photo-03 {
+  background: url('../images/floor/slide_03.png')
+}
+
+#gallery .photo-04 {
+  background: url('../images/floor/slide_04.png')
+}
+
+#gallery .photo-05 {
+  background: url('../images/floor/slide_05.png')
+}
+
+#facility ul li {
+  width: 45%
+}
+
+#facility ul li .flex {
+  align-items: center;
+}
+
+#facility ul li .flex h3, #facility ul li .flex p {
+  margin: 2rem 0;
+}
+
+#facility img {
+  width: 100%
+}
+
+.slick-slide {
+  height: auto !important
+}
+
+@media(max-width:480px) {
+
+  /*--スマホたて--*/
+  #inside ul li {
+    width: 100%;
+    margin: 0 0 2rem 0 !important
+  }
+
+  #facility ul li {
+    width: 100%;
+    margin-bottom: 2rem
+  }
+}
+
+/*--------------------------------------------------------------京都観光情報*/
+#kyoto h2.ttl {
+  margin: 3rem 0 5rem 0
+}
+
+#kyoto .num {
+  display: inline-block;
+  color: #BAB27C;
+  border: 1px solid #BAB27C;
+  padding: 4px 5px 4px 10px;
+  margin-right: 1rem !important;
+  font-size: 80%;
+}
+
+#kyoto .btn {
+  text-align: right;
+}
+
+#kyoto .wrap>div:nth-child(2) {
+  position: relative;
+}
+
+#kyoto .wrap>div:nth-child(2)::after {
+  content: '';
+  width: 500px;
+  height: 1px;
+  transform: rotate(40deg);
+  border-bottom: 1px dashed #BAB27C;
+  position: absolute;
+  bottom: -70px;
+  left: 150px;
+  z-index: -1
+}
+
+#kyoto .wrap:nth-child(3)>div::after {
+  display: none
+}
+
+@media(max-width:768px) {
+
+  /*--スマホよこ--*/
+  #kyoto .images-wrap {
+    width: 55%;
+  }
+
+  #kyoto .btn {
+    text-align: left;
+  }
+}
+
+@media(max-width:480px) {
+
+  /*--スマホたて--*/
+  #kyoto h2.ttl {
+    text-align: center;
+    margin: 3rem 0;
+  }
+
+  #kyoto .num {
+    margin: 0 0 1rem 0 !important
+  }
+
+  #kyoto .wrap>div::after {
+    display: none
+  }
+
+  #facility ul li {
+    width: 100%;
+    margin-bottom: 2rem
+  }
+
+  #kyoto .btn {
+    text-align: center;
+  }
+
+  #kyoto .images-wrap {
+    width: 100%;
+    margin-bottom: 3rem
+  }
+}
+
+/*--------------------------------------------------------------記事*/
+#post-contnt .wrap .layout-01 {
+  align-items: flex-start;
+  margin-bottom: 7rem
+}
+
+#post-contnt .wrap .layout-01:nth-child(2n) {
+  flex-flow: row-reverse wrap;
+}
+
+#post-contnt .layout-01 .text-box {
+  width: 47%;
+}
+
+#post-contnt .layout-01:first-child {
+  align-items: center;
+}
+
+#post-contnt .layout-01:first-child .text-box {
+  margin: 0 0 0 3rem;
+  width: 40%;
+}
+
+#post-contnt .layout-01:first-child {
+  margin-bottom: 4rem;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid #454545
+}
+
+#post-contnt .images-wrap {
+  position: relative;
+}
+
+h2.layer {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  filter: drop-shadow(0 0 5px black);
+}
+
+.cap {
+  color: #606363;
+  margin-top: 10px
+}
+
+#post-info {
+  position: relative;
+  text-transform: lowercase;
+}
+
+#post-info::before {
+  content: '';
+  width: 1px;
+  height: 70px;
+  margin: 0 auto;
+  background: #454545;
+  position: absolute;
+  top: -3.5rem
+}
+
+#post-info .flex {
+  align-items: center;
+}
+
+#post-info iframe, #post-info .text-wrap {
+  width: 47%;
+}
+
+#post-info iframe {
+  filter: grayscale(90%);
+}
+
+@media(max-width:768px) {
+
+  /*--スマホよこ--*/
+  #post-contnt .wrap .layout-01 {
+    flex-wrap: wrap;
+    margin-bottom: 5rem;
+  }
+
+  #post-contnt .layout-01 .text-box {
+    width: 100%;
+  }
+
+  #post-contnt .layout-01:first-child .text-box {
+    margin: 0 0 0 3rem;
+    width: 100%;
+  }
+
+  #post-contnt .images-wrap {
+    margin: 0 auto 1rem auto
+  }
+
+  #post-contnt .layout-01:first-child .text-box {
+    margin: 0 15px
+  }
+}
+
+@media(max-width:480px) {
+
+  /*--スマホたて--*/
+  #post-info iframe, #post-info .text-wrap {
+    width: 100%;
+  }
+
+  #post-info iframe {
+    margin-bottom: 2rem
+  }
+}
+
+/*--------------------------------------------------------------お問い合わせ*/
+#form {
+  width: 70%;
+  margin: 3rem auto 0 auto
+}
+
+#form .flex {
+  margin-top: 1rem
+}
+
+#form .flex>p {
+  width: 35%;
+}
+
+#form .flex>p span {
+  padding: 1px 5px
+}
+
+#form .flex>.text-box, #form .flex>.radio-wrap, #form .flex>.textarea-wrap {
+  width: 65%;
+}
+
+#form input,#form .flex>.textarea-wrap textarea {
+  width: 100%;
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 10px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+#form .radio-wrap label {
+  display: inline-block;
+}
+
+#form .radio-wrap input {
+  display: none;
+}
+
+#form .radio-wrap input+span {
+  padding: 0 27px;
+  position: relative;
+}
+
+#form .radio-wrap input+span::before {
+  content: "";
+  background-image: url(../images/common/radio.png);
+  background-size: contain;
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 18px;
+  height: 18px;
+}
+
+#form .radio-wrap input:checked+span::after {
+  content: "";
+  background-image: url(../images/common/radio-checked.png);
+  background-size: contain;
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 18px;
+  height: 18px;
+}
+
+#contact input[type='submit']{
+  border: none;
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  border-radius: 100px;
+  background-color: #BAB27C;
+  color: #0D0D0D;
+  font-weight: bold;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-top: 3rem
+}
+
+@media(max-width:768px) {
+  /*--スマホよこ--*/
+}
+
+@media(max-width:480px) {
+
+  /*--スマホたて--*/
+  #form, #form .flex>p, #form .flex>.text-box, #form .flex>.radio-wrap, #form .flex>.textarea-wrap {
+    width: 100%;
+    margin: .5rem 0;
+  }
+  #contact p.txt-c {
+    text-align:
+  }
+}
+
+/*--------------------------------------------------------------プライバシーポリシー*/
+
+#pp h2 {
+  border-bottom: solid 2px #BAB27C;
+  color: #fff;
+  padding: 0 0 10px 0
+}
+
+#pp h3 {
+  border-left: solid 4px #BAB27C;
+  padding: 0 0 0 10px
+}
+
+#pp h4 {
+  color: #BAB27C;
+}
+
+#pp ul {
+  margin: 1rem;
+}
+
+#pp ul li::before {
+  content: '-';
+  color: #BAB27C;
+  margin-right: 1rem
+}
+
+#pp a {
+  text-decoration: underline;
+  color: #BAB27C;
+}
+
+#pp table, #pp table td {
+  border: 1px solid #BAB27C;
+  border-spacing: inherit;
+  margin: 1rem;
+}
+
+#pp table td {
+  padding: 10px;
+}

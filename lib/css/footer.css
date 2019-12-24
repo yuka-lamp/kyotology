@@ -1,0 +1,118 @@
+/*--------------------------------------------------------------フッター*/
+footer {
+  border-top: 1px solid #454545;
+  padding: 3rem 0 0 0;;
+  background: #0D0D0D;
+  margin-top: 5rem
+}
+
+footer small {
+  white-space: nowrap;
+  margin: 3px 3rem 0 0
+}
+
+footer ul {}
+
+footer .footer-small {
+  background: #454545;
+  width: 100%;
+  margin: 3rem 0 0 0;
+  font-size: 80%;
+  padding: 12px 0
+}
+
+footer .footer-small ul li {
+  display: inline-block;
+  font-size: 100%;
+  margin-right: 1rem
+}
+
+footer .pc-only li {
+  padding: 1rem 2rem 0 4rem;
+  white-space: nowrap;
+  font-size: 14px;
+  display: inline-block;
+}
+
+footer .pc-only li a {
+  position: relative;
+}
+
+footer .pc-only li a::after, footer .pc-only li a::before {
+  content: '';
+  width: 30px;
+  height: 1px;
+  background: #BAB27C;
+  position: absolute;
+  transition-duration: .6s
+}
+
+footer .pc-only li a::after {
+  top: 12px;
+  left: -50px;
+}
+
+footer .pc-only li a::before {
+  top: 7px;
+  left: -55px;
+}
+
+footer .pc-only li:hover a::after {
+  left: -58px;
+}
+
+footer .pc-only li:hover a::before {
+  left: -63px;
+}
+
+@media(max-width:768px) {
+
+  /*--スマホよこ--*/
+  footer .footer-small {
+    background: #0D0D0D
+  }
+}
+
+@media(max-width:480px) {
+  footer .sns-link li {
+    position: initial;
+    margin: 2rem 1rem 0 0;
+    display: inline-block;
+  }
+
+  footer .sns-link li {
+    margin:
+  }
+
+  footer .sns-link li a img {
+    width: 25px
+  }
+
+  footer>.wrap {
+    text-align: center;
+  }
+
+  footer>.wrap>div {
+    width: 100%
+  }
+
+  footer img {
+    margin: 0 auto !important;
+    display: block;
+  }
+
+  footer .images-wrap {
+    width: 100%;
+  }
+
+  footer .footer-small {
+    margin: 0 0 3rem 0;
+    text-align: center;
+  }
+
+  footer .footer-small small {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+  }
+}

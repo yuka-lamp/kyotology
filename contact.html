@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta charset="UTF-8">
+<title>お問い合わせ｜KYOTOLOGY</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" href="./lib/css/header.css">
+<link rel="stylesheet" href="./lib/css/footer.css">
+<link rel="stylesheet" href="./lib/css/under.css">
+<link rel="stylesheet" href="./lib/css/reset.css">
+<link rel="stylesheet" href="./lib/css/slick.css">
+<link rel="stylesheet" href="./lib/css/slick-theme.css">
+<link rel="stylesheet" href="./lib/css/common.min.css">
+<link rel="stylesheet" href="./lib/css/drawer.min.css">
+<link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Noto+Sans+JP:400,500&display=swap" rel="stylesheet">
+</head>
+
+<body class="drawer drawer--left">
+<!-- ヘッダー -->
+<header id="header">
+<div class="sp-only">
+<h1><a href="./top.html"><img src="./lib/images/common/logo_fff.svg" alt="kyotologyロゴ"></a></h1>
+</div>
+<button type="button" class="drawer-toggle drawer-hamburger">
+<span class="sr-only">toggle navigation</span>
+<span class="drawer-hamburger-icon"></span>
+</button>
+<div class="dropdown top-only pc-only">
+<input id="tg-01" class="dropInput-01" type="checkbox">
+<label for="tg-01" class="dropLabel"><img src="./lib/images/common/icon_earth.svg" alt="地球のアイコン">JP</label>
+<ul class="menu animation">
+<!-- <li><a class="item" href="#">JP</a></li> -->
+<li><a class="item" href="#">ENG</a></li>
+</ul>
+</div>
+<div class="fixed-top flex pc-only">
+<div class="dropdown">
+<input id="tg-02" class="dropInput-02" type="checkbox">
+<label for="tg-02" class="dropLabel"><img src="./lib/images/common/icon_earth.svg" alt="地球のアイコン">JP</label>
+<ul class="menu animation">
+<!-- <li><a class="item" href="#">JP</a></li> -->
+<li><a class="item" href="#">ENG</a></li>
+</ul>
+</div>
+<h1><a href="./top.html"><img src="./lib/images/common/logo_fff.svg" alt="kyotologyロゴ"></a></h1>
+</div>
+<div class="fixed-left pc-only">
+<ul class="sns-link">
+<li class="mb-1"><a href="#"><img src="./lib/images/common/icon_fb.svg" alt="Facebookのアイコン"></a></li>
+<li><a href="#"><img src="./lib/images/common/icon_inst.svg" alt="Instagramのアイコン"></a></li>
+</ul>
+</div>
+<div class="fixed-bottom pc-only">
+<div class="booking-btn bg-gold"><a class="strong" href="#">BOOKING</a></div>
+</div>
+<a href="#about" class="scroll top-only fff">Scroll</a>
+<a href="#" class="pagetop fff">TOP</a>
+<nav class="drawer-nav" role="navigation">
+<ul class="drawer-menu">
+<li class="sp-only"><a class="drawer-brand" href="./top.html"><img src="./lib/images/common/logo_fff.svg" alt="kyotologyロゴ"></a></li>
+<li><a class="drawer-menu-item" href="./room.html">客室案内<span class="gold">Room information</span></a></li>
+<li><a class="drawer-menu-item" href="./floor.html">館内案内<span class="gold">floor guide</span></a></li>
+<li><a class="drawer-menu-item" href="./kyoto.html">京都観光情報<span class="gold">Room information</span></a></li>
+<li>
+<ul>
+<li><a class="drawer-menu-item" href="./contact.html">お問い合わせ</a></li>
+<li><a class="drawer-menu-item" href="./top.html#access">アクセス</a></li>
+</ul>
+</li>
+<li class="booking-btn"><a class="drawer-menu-item strong bg-gold" href="#">BOOKING</a></li>
+</ul>
+<div class="dropdown">
+<input id="tg-03" class="dropInput-03" type="checkbox">
+<label for="tg-03" class="dropLabel"><img src="./lib/images/common/icon_earth.svg" alt="地球のアイコン">JP</label>
+<ul class="menu animation">
+<!-- <li><a class="item" href="#">JP</a></li> -->
+<li><a class="item" href="#">ENG</a></li>
+</ul>
+</div>
+</nav>
+</header>
+<!-- ヘッダー終了 -->
+
+<!-- メインコンテンツ -->
+<main>
+<section id="sub-mv" class="txt-c room">
+<h2>お問い合わせ</h2>
+<p class="eng">contact</p>
+</section>
+
+<section id="contact" class="sec">
+<div class="wrap">
+<h2 class="txt-c">お問い合せフォーム</h2>
+<p class="txt-c">お問い合わせ入力フォームに必要事項を入力の上、[確認]ボタンをクリックしてください。</p>
+<form id="form" method="post" action="./contact-check.php">
+<div class="flex">
+<p class="item-name">お名前<span class="bg-gold ml-1">必須</span></p>
+<div class="text-box">
+<input type="text" name="shimei" value="" placeholder="お名前" required>
+</div>
+</div>
+<div class="flex">
+<p class="item-name">フリガナ<span class="bg-gold ml-1">必須</span></p>
+<div class="text-box">
+<input type="text" name="furi" value="" placeholder="フリガナ" required>
+</div>
+</div>
+<div class="flex">
+<p class="item-name">メールアドレス<span class="bg-gold ml-1">必須</span></p>
+<div class="text-box">
+<input type="email" name="mail" value="" placeholder="メールアドレス" required>
+</div>
+</div>
+<div class="flex">
+<p class="item-name">お電話番号</p>
+<div class="text-box">
+<input type="tel" name="tel" value="" placeholder="123-4567-8900">
+</div>
+</div>
+<div class="flex">
+<p class="item-name">お問い合わせ内容<span class="bg-gold ml-1">必須</span></p>
+<div class="textarea-wrap">
+<textarea name="content" rows="8" cols="80" placeholder="お問い合わせ内容をご入力ください" required></textarea>
+</div>
+</div>
+<div class="submit-wrap">
+<input type="submit" value="確認">
+</div>
+</form>
+</div>
+</section>
+
+<!-- フッター -->
+<footer id="footer">
+<div class="wrap flex">
+<div class="">
+<div class="images-wrap">
+<img class="mb-3" src="./lib/images/common/logo_footer.svg" alt="kyotologyのロゴ">
+</div>
+<ul class="pc-only">
+<li><a href="./top.html">トップページ</a></li>
+<li><a href="./room.html">客室案内</a></li>
+<li><a href="./floor.html">館内案内</a></li>
+</ul>
+<ul class="pc-only">
+<li><a href="./kyoto.html">京都観光情報</a></li>
+<li><a href="./top.html#access"></a>アクセス</a></li>
+<li><a href="./contact.html">お問い合わせ</a></li>
+</ul>
+</div>
+<ul class="sns-link sp-only">
+<li class="mb-1"><a href="#"><img src="./lib/images/common/icon_fb.svg" alt="Facebookのアイコン"></a></li>
+<li><a href="#"><img src="./lib/images/common/icon_inst.svg" alt="Instagramのアイコン"></a></li>
+</ul>
+</div>
+<div class="footer-small">
+<div class="wrap flex">
+<ul>
+<li><a href="./privacy-policy.html">プライバシーポリシー</a></li>
+<li><a href="#">サイトマップ</a></li>
+</ul>
+<small>© 2019 kyotology</small>
+</div>
+</div>
+</footer>
+<!-- フッター終了 -->
+</main>
+<!-- メインコンテンツ終了 -->
+
+<script type="text/javascript" src="./lib/js/jquery.min.js"></script>
+<script type="text/javascript" src="./lib/js/iscroll.js"></script>
+<script type="text/javascript" src="./lib/js/drawer.min.js"></script>
+<script type="text/javascript" src="./lib/js/slick.min.js"></script>
+<script type="text/javascript" src="./lib/js/app.js"></script>
+<script type="text/javascript" src="./lib/js/jquery.bgswitcher.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,580 @@
+body {
+  font-family: 'Didact Gothic', sans-serif, 'Noto Sans JP', 'Yu Gothic Medium', '游ゴシック Medium', YuGothic, '游ゴシック体', 'ヒラギノ角ゴ Pro W3', 'メイリオ', sans-serif;
+  font-size: 100%;
+  letter-spacing: .1rem;
+  position: relative;
+  font-weight: lighter;
+  color: #fff;
+  background: #0D0D0D;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 14px;
+  letter-spacing: .1rem;
+  line-height: 2.1
+}
+
+h2, h3 {
+  font-weight: bold;
+  letter-spacing: 5px
+}
+
+h2 {
+  font-size: 150%
+}
+
+h3 {
+  font-size: 140%
+}
+
+.strong {
+  font-size: 115%
+}
+
+.min {
+  font-size: 90%;
+}
+
+/*--------------------------------------------------------------レイアウト*/
+.sec {
+  padding: 80px 0
+}
+
+.wrap {
+  width: 1000px;
+  margin: 0 auto
+}
+
+.sp-only {
+  display: none !important;
+}
+
+.fixed-left {
+  width: 5%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #0D0D0D;
+  overflow: hidden;
+}
+
+.fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 96
+}
+
+main {
+  width: 95%;
+  overflow: hidden;
+  margin-left: 5%
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: no-wrap;
+}
+
+@media(max-width:768px) {
+  /*--スマホよこ--*/
+}
+
+@media(max-width:480px) {
+
+  /*--スマホたて--*/
+  .sp-only {
+    display: block !important;
+  }
+
+  .pc-only {
+    display: none !important;
+  }
+
+  main {
+    width: 100%;
+    margin: 0
+  }
+
+  .flex {
+    flex-wrap: wrap;
+  }
+}
+
+/*--------------------------------------------------------------よく使う*/
+.gold {
+  color: #BAB27C
+}
+
+.bg-gold {
+  background: #BAB27C
+}
+
+.eng {
+  font-size: 90%;
+  color: #BAB27C;
+  margin: 0 0 2rem 1rem
+}
+
+.layout-01 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-box {
+  width: 40%;
+}
+
+.text-box h3 {
+  margin: 0 0 2rem 0
+}
+
+.text-box p:nth-child(3), .text-box p:nth-child(4) {
+  margin-left: 2rem
+}
+
+.text-box p:last-child br {
+  display: none
+}
+
+.btn {
+  position: relative;
+  letter-spacing: .6rem;
+  padding: 1rem 0;
+  display: block;
+  font-size: 14px;
+}
+
+.btn a {
+  position: relative;
+}
+
+.btn a::after, .btn a::before {
+  content: '';
+  width: 30px;
+  height: 1px;
+  background: #BAB27C;
+  position: absolute;
+  transition-duration: .6s
+}
+
+.btn a::after {
+  top: 12px;
+  right: -50px;
+}
+
+.btn a::before {
+  top: 7px;
+  right: -55px;
+}
+
+.btn:hover a::after {
+  right: -58px;
+}
+
+.btn:hover a::before {
+  right: -63px;
+}
+
+.fadeIn {
+  transform: translate3d(0, -10px, 0);
+  transition: 1s;
+  opacity: 0;
+}
+
+.fadeIn.animated {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+.ttl {
+  margin: 0
+}
+
+.ttl span {
+  font-size: 12px;
+  display: block;
+  margin: 10px 0 0 0 !important;
+  padding: 0
+}
+
+@media(max-width:768px) {
+  /*--スマホよこ--*/
+}
+
+@media(max-width:480px) {
+
+  /*--スマホたて--*/
+  .layout-01 {
+    flex-wrap: wrap;
+  }
+
+  .text-box {
+    width: 100%;
+  }
+
+  .text-box {
+    width: 100%;
+  }
+
+  .text-box h3 {
+    margin: 0
+  }
+
+  .text-box p:last-child {
+    margin: 0
+  }
+}
+
+/*--------------------------------------------------------------固定上*/
+header .fixed-top, .dropdown.top-only {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 96
+}
+
+h1 {
+  width: 254px;
+}
+
+h1 img {
+  width: 100%
+}
+
+.dropdown {
+  display: inline-block;
+}
+
+#tg-01, #tg-02, #tg-03 {
+  display: none
+}
+
+.menu {
+  position: relative;
+  visibility: hidden;
+  opacity: 0;
+  top: -10px;
+  list-style: none
+}
+
+.dropInput-01:checked~.menu, .dropInput-02:checked~.menu, .dropInput-03:checked~.menu {
+  visibility: visible;
+  opacity: 1;
+  top: 0
+}
+
+.dropLabel {
+  border-bottom: 1px solid #fff;
+  padding: .5em 1em;
+margin: 0 2rem 0 0;
+display: block;
+}
+
+.item {
+  margin: 0 2rem 0 0;
+  display: block;
+}
+
+.menu {
+  margin: 0 2rem 0 0;
+}
+
+.menu li {
+  margin: 1rem 2rem 1rem 0;
+  text-align: center;
+}
+
+.dropLabel img {
+  width: 13px;
+  margin: 0 15px 2px 0;
+}
+
+.item:hover {
+  text-decoration: underline;
+}
+
+.animation {
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s;
+}
+
+@media(max-width:768px) {
+  /*--スマホよこ--*/
+}
+
+@media(max-width:480px) {
+
+  /*--スマホたて--*/
+  .sp-only h1 {
+    position: fixed;
+    top: 20px;
+    left: 10px;
+    z-index: 97;
+  }
+}
+
+/*--------------------------------------------------------------固定左*/
+.sns-link li {
+  position: fixed;
+  left: 22px;
+  display: inline-block;
+  margin-top: -30px
+}
+
+.sns-link li:nth-child(1) {
+  top: 48%;
+}
+
+.sns-link li:nth-child(2) {
+  top: 52%;
+}
+
+.scroll, .pagetop {
+  position: fixed;
+  transform: rotate(-90deg);
+  font-size: 12px;
+  z-index: 96
+}
+
+.scroll {
+  bottom: 3rem;
+  left: 5px;
+}
+
+.pagetop {
+  bottom: 3rem;
+  left: 18px;
+}
+
+.scroll::after, .scroll::before, .pagetop::after, .pagetop::before {
+  content: '';
+  width: 30px;
+  height: 1px;
+  background: #BAB27C;
+  position: absolute;
+}
+
+.scroll::after, .pagetop::after {
+  top: 9px;
+  left: 70px;
+}
+
+.scroll::before, .pagetop::before {
+  top: 5px;
+  left: 65px;
+}
+
+.drawer-hamburger {
+  padding: 12px;
+  width: 2%;
+  height: 20px;
+  margin-left: 6px
+}
+
+@media(max-width:768px) {
+
+  /*--スマホよこ--*/
+  .sns-link li {
+    left: 14px;
+  }
+
+  .scroll {
+    left: -3px;
+  }
+
+  .pagetop {
+    left: 12px;
+  }
+
+  .sns-link li:nth-child(2) {
+    top: 54%;
+  }
+}
+
+@media(max-width:480px) {
+
+  /*--スマホたて--*/
+  .drawer-toggle {
+    position: fixed !important;
+    top: 10px !important;
+    right: 10px !important;
+    z-index: 93 !important
+  }
+
+  .drawer--left.drawer-open .drawer-hamburger {
+    right: 0.25rem!important;
+    left: auto!important;
+    z-index: 98!important;
+  }
+}
+
+/*--------------------------------------------------------------固定下*/
+
+.booking-btn {
+  position: relative;
+  color: #0D0D0D;
+  padding: .7rem 4rem;
+}
+
+.booking-btn a {
+  padding: 1.4rem 0
+}
+
+.booking-btn::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 13px;
+  width: 10px;
+  height: 10px;
+  border-top: 1px solid #0D0D0D;
+  border-right: 1px solid #0D0D0D;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-top: -5px;
+}
+
+.booking-btn:hover {
+  opacity: 0.6;
+}
+
+
+.fixed-bottom .booking-btn a {
+  display: block;
+  padding: .5rem 0;
+  letter-spacing: 5px
+}
+
+@media(max-width:768px) {
+  /*--スマホよこ--*/
+}
+
+@media(max-width:480px) {
+  /*--スマホたて--*/
+}
+
+/*--------------------------------------------------------------ナビゲーション開*/
+.drawer-nav {
+  background: #0D0D0D !important;
+  z-index: 94 !important
+}
+
+.drawer-nav {
+  position: relative;
+}
+
+.drawer-nav ul li {
+  margin: 1rem auto
+}
+
+.drawer-nav ul li.sp-only {
+  position: absolute;
+  top: -7rem;
+  left: -3rem;
+}
+
+.drawer-nav ul li a {
+  color: #fff;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.drawer-nav ul li a:hover {
+  color: #979B9B;
+  text-decoration: none;
+}
+
+.drawer-nav ul li a span {
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+  letter-spacing: 4px
+}
+
+.drawer-nav ul li ul {
+  display: flex;
+}
+
+.drawer-nav ul li ul li {
+  width: 50%;
+}
+
+nav {
+  padding: 2rem 0;
+}
+
+nav .dropdown {
+  display: block;
+  margin: 1rem 0;
+  width: 100%;
+  text-align: center;
+}
+
+nav .dropLabel, .item {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+nav .dropLabel {
+  color: #Fff
+}
+
+nav .booking-btn {
+  padding: 0;
+}
+
+nav .booking-btn a {
+  color: #0D0D0D!important;
+  letter-spacing: 5px
+}
+
+nav .booking-btn a:hover {
+  opacity: 0.6;
+  background-color: #BAB27C
+}
+
+@media(max-width:768px) {
+  /*--スマホよこ--*/
+}
+
+@media(max-width:480px) {
+
+  /*--スマホたて--*/
+  .drawer-nav {
+    width: 100% !important;
+    padding: 6rem 3rem 0 3rem;
+    box-sizing: border-box;
+  }
+}
+
+/* ローディング画面の背景 */
+#is-loading {
+ display: block;
+ position: fixed;
+ width: 100%;
+ height: 100%;
+ top: 0px;
+ left: 0px;
+ background: #000;
+ z-index: 98;
+}
+#loading {
+ display: none;
+ position: fixed;
+ top: 50%;
+ left: 50%;
+ width: 200px;
+ height: 200px;
+ margin-top: -100px;
+ margin-left: -100px;
+ text-align: center;
+ z-index: 99;
+}
