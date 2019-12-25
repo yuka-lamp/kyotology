@@ -36,6 +36,10 @@ h3 {
   font-size: 90%;
 }
 
+a {
+  cursor : pointer!important;
+}
+
 /*--------------------------------------------------------------レイアウト*/
 .sec {
   padding: 80px 0
@@ -405,7 +409,7 @@ h1 img {
     position: fixed !important;
     top: 10px !important;
     right: 10px !important;
-    z-index: 96 !important
+    z-index: 93 !important
   }
 
   .drawer--left.drawer-open .drawer-hamburger {
@@ -469,7 +473,7 @@ h1 img {
 }
 
 .drawer-nav ul li {
-  margin: 1rem auto
+  margin: .5rem auto
 }
 
 .drawer-nav ul li.sp-only {
@@ -548,7 +552,7 @@ nav .booking-btn a:hover {
   /*--スマホたて--*/
   .drawer-nav {
     width: 100% !important;
-    padding: 6rem 3rem 0 3rem;
+    padding: 4rem 3rem 0 3rem;
     box-sizing: border-box;
   }
 }
@@ -583,15 +587,19 @@ nav .booking-btn a:hover {
   /*--スマホたて--*/
   #is-loading {
     left: auto;
-    right: 0px!important;
+    right: 0px !important;
   }
 
   .drawer--right .drawer-nav {
-    right: -24.25rem!important;
+    right: -24.25rem !important;
   }
 
   .drawer--right.drawer-open .drawer-nav {
-    right: 0!important;
+    right: 0 !important;
+  }
+
+  .drawer--right.drawer-open .drawer-hamburger {
+    z-index: 99 !important
   }
 
   .drawer-overlay {
