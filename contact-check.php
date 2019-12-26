@@ -58,10 +58,17 @@ function setToken()
 </head>
 
 <body class="drawer drawer--left">
+<!-- ローディングのアニメーション -->
+<div id="is-loading">
+<div id="loading">
+<img src="./lib/images/common/loading.gif" alt="loadingなう" />
+</div>
+</div>
+<div id="loading__wrapper">
 <!-- ヘッダー -->
 <header id="header">
 <div class="sp-only">
-<h1><a href="./top.html"><img src="./lib/images/common/logo_fff.svg" alt="kyotologyロゴ"></a></h1>
+<h1 id="sp-logo"><a href="./top.html"><img src="./lib/images/common/logo_fff.svg" alt="kyotologyロゴ"></a></h1>
 </div>
 <button type="button" class="drawer-toggle drawer-hamburger">
 <span class="sr-only">toggle navigation</span>
@@ -72,7 +79,7 @@ function setToken()
 <label for="tg-01" class="dropLabel"><img src="./lib/images/common/icon_earth.svg" alt="地球のアイコン">JP</label>
 <ul class="menu animation">
 <!-- <li><a class="item" href="#">JP</a></li> -->
-<li><a class="item" href="#">ENG</a></li>
+<li><a class="item" href="#">en</a></li>
 </ul>
 </div>
 <div class="fixed-top flex pc-only">
@@ -81,7 +88,7 @@ function setToken()
 <label for="tg-02" class="dropLabel"><img src="./lib/images/common/icon_earth.svg" alt="地球のアイコン">JP</label>
 <ul class="menu animation">
 <!-- <li><a class="item" href="#">JP</a></li> -->
-<li><a class="item" href="#">ENG</a></li>
+<li><a class="item" href="#">en</a></li>
 </ul>
 </div>
 <h1><a href="./top.html"><img src="./lib/images/common/logo_fff.svg" alt="kyotologyロゴ"></a></h1>
@@ -92,14 +99,14 @@ function setToken()
 <li><a href="#"><img src="./lib/images/common/icon_inst.svg" alt="Instagramのアイコン"></a></li>
 </ul>
 </div>
-<div class="fixed-bottom pc-only">
-<div class="booking-btn bg-gold"><a class="strong" href="#">BOOKING</a></div>
+<div class="fixed-bottom">
+<div class="booking-btn bg-gold"><a href="#">ご予約はこちら</a></div>
 </div>
 <a href="#about" class="scroll top-only fff">Scroll</a>
 <a href="#" class="pagetop fff">TOP</a>
-<nav class="drawer-nav" role="navigation">
+<nav class="drawer-nav">
 <ul class="drawer-menu">
-<li class="sp-only"><a class="drawer-brand" href="./top.html"><img src="./lib/images/common/logo_fff.svg" alt="kyotologyロゴ"></a></li>
+<li><a class="drawer-menu-item" href="./top.html">ホーム<span class="gold">home</span></a></li>
 <li><a class="drawer-menu-item" href="./room.html">客室案内<span class="gold">Room information</span></a></li>
 <li><a class="drawer-menu-item" href="./floor.html">館内案内<span class="gold">floor guide</span></a></li>
 <li><a class="drawer-menu-item" href="./kyoto.html">京都観光情報<span class="gold">Room information</span></a></li>
@@ -109,14 +116,14 @@ function setToken()
 <li><a class="drawer-menu-item" href="./top.html#access">アクセス</a></li>
 </ul>
 </li>
-<li class="booking-btn"><a class="drawer-menu-item strong bg-gold" href="#">BOOKING</a></li>
+<li class="booking-btn"><a class="drawer-menu-item strong bg-gold" href="#">ご予約はこちら</a></li>
 </ul>
 <div class="dropdown">
 <input id="tg-03" class="dropInput-03" type="checkbox">
 <label for="tg-03" class="dropLabel"><img src="./lib/images/common/icon_earth.svg" alt="地球のアイコン">JP</label>
 <ul class="menu animation">
 <!-- <li><a class="item" href="#">JP</a></li> -->
-<li><a class="item" href="#">ENG</a></li>
+<li><a class="item" href="#">en</a></li>
 </ul>
 </div>
 </nav>

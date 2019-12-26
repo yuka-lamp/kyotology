@@ -1,204 +1,219 @@
 <html lang="ja">
 
 <head>
-<meta charset="UTF-8">
-<title>石庭に数々のトリックが潜む「龍安寺」｜KYOTOLOGY</title>
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<link rel="stylesheet" href="./lib/css/header.css">
-<link rel="stylesheet" href="./lib/css/footer.css">
-<link rel="stylesheet" href="./lib/css/under.css">
-<link rel="stylesheet" href="./lib/css/reset.css">
-<link rel="stylesheet" href="./lib/css/slick.css">
-<link rel="stylesheet" href="./lib/css/slick-theme.css">
-<link rel="stylesheet" href="./lib/css/common.min.css">
-<link rel="stylesheet" href="./lib/css/drawer.min.css">
-<link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Noto+Sans+JP:400,500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>石庭に数々のトリックが潜む「龍安寺」｜KYOTOLOGY</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="./lib/css/header.css">
+  <link rel="stylesheet" href="./lib/css/footer.css">
+  <link rel="stylesheet" href="./lib/css/under.css">
+  <link rel="stylesheet" href="./lib/css/reset.css">
+  <link rel="stylesheet" href="./lib/css/slick.css">
+  <link rel="stylesheet" href="./lib/css/slick-theme.css">
+  <link rel="stylesheet" href="./lib/css/common.min.css">
+  <link rel="stylesheet" href="./lib/css/drawer.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Noto+Sans+JP:400,500&display=swap" rel="stylesheet">
 </head>
 
 <body class="drawer drawer--left">
-<!-- ヘッダー -->
-<header id="header">
-  <div class="sp-only">
-    <h1><a href="./top.html"><img src="./lib/images/common/logo_fff.svg" alt="kyotologyロゴ"></a></h1>
+  <!-- ローディングのアニメーション -->
+  <div id="is-loading">
+    <div id="loading">
+      <img src="./lib/images/common/loading.gif" alt="loadingなう" />
+    </div>
   </div>
-  <button type="button" class="drawer-toggle drawer-hamburger">
-  <span class="sr-only">toggle navigation</span>
-  <span class="drawer-hamburger-icon"></span>
-  </button>
-  <div class="dropdown top-only pc-only">
-   <input id="tg-01" class="dropInput-01" type="checkbox">
-   <label for="tg-01" class="dropLabel"><img src="./lib/images/common/icon_earth.svg" alt="地球のアイコン">JP</label>
-     <ul class="menu animation">
-        <!-- <li><a class="item" href="#">JP</a></li> -->
-        <li><a class="item" href="#">ENG</a></li>
-    </ul>
-  </div>
-  <div class="fixed-top flex pc-only">
-    <div class="dropdown">
-     <input id="tg-02" class="dropInput-02" type="checkbox">
-     <label for="tg-02" class="dropLabel"><img src="./lib/images/common/icon_earth.svg" alt="地球のアイコン">JP</label>
-       <ul class="menu animation">
+  <div id="loading__wrapper">
+    <!-- ヘッダー -->
+    <header id="header">
+      <div class="sp-only">
+        <h1 id="sp-logo"><a href="./top.html"><img src="./lib/images/common/logo_fff.svg" alt="kyotologyロゴ"></a></h1>
+      </div>
+      <button type="button" class="drawer-toggle drawer-hamburger">
+        <span class="sr-only">toggle navigation</span>
+        <span class="drawer-hamburger-icon"></span>
+      </button>
+      <div class="dropdown top-only pc-only">
+        <input id="tg-01" class="dropInput-01" type="checkbox">
+        <label for="tg-01" class="dropLabel"><img src="./lib/images/common/icon_earth.svg" alt="地球のアイコン">JP</label>
+        <ul class="menu animation">
           <!-- <li><a class="item" href="#">JP</a></li> -->
-          <li><a class="item" href="#">ENG</a></li>
-      </ul>
-    </div>
-    <h1><a href="./top.html"><img src="./lib/images/common/logo_fff.svg" alt="kyotologyロゴ"></a></h1>
-  </div>
-  <div class="fixed-left pc-only">
-    <ul class="sns-link">
-      <li class="mb-1"><a href="#"><img src="./lib/images/common/icon_fb.svg" alt="Facebookのアイコン"></a></li>
-      <li><a href="#"><img src="./lib/images/common/icon_inst.svg" alt="Instagramのアイコン"></a></li>
-    </ul>
-  </div>
-  <div class="fixed-bottom pc-only">
-    <div class="booking-btn bg-gold"><a class="strong" href="#">BOOKING</a></div>
-  </div>
-  <a href="#about" class="scroll top-only fff">Scroll</a>
-  <a href="#" class="pagetop fff">TOP</a>
-  <nav class="drawer-nav" role="navigation">
-    <ul class="drawer-menu">
-      <li class="sp-only"><a class="drawer-brand" href="./top.html"><img src="./lib/images/common/logo_fff.svg" alt="kyotologyロゴ"></a></li>
-      <li><a class="drawer-menu-item" href="./room.html">客室案内<span class="gold">Room information</span></a></li>
-      <li><a class="drawer-menu-item" href="./floor.html">館内案内<span class="gold">floor guide</span></a></li>
-      <li><a class="drawer-menu-item" href="./kyoto.html">京都観光情報<span class="gold">Room information</span></a></li>
-      <li>
-        <ul>
-          <li><a class="drawer-menu-item" href="./contact.html">お問い合わせ</a></li>
-          <li><a class="drawer-menu-item" href="./top.html#access">アクセス</a></li>
-        </ul>
-      </li>
-      <li class="booking-btn"><a class="drawer-menu-item strong bg-gold" href="#">BOOKING</a></li>
-    </ul>
-    <div class="dropdown">
-     <input id="tg-03" class="dropInput-03" type="checkbox">
-     <label for="tg-03" class="dropLabel"><img src="./lib/images/common/icon_earth.svg" alt="地球のアイコン">JP</label>
-       <ul class="menu animation">
-          <!-- <li><a class="item" href="#">JP</a></li> -->
-          <li><a class="item" href="#">ENG</a></li>
-      </ul>
-    </div>
-  </nav>
-</header>
-<!-- ヘッダー終了 -->
-
-<!-- メインコンテンツ -->
-<main>
-  <section id="post-contnt" class="sec">
-    <div class="layout-01 mb-3">
-      <div class="images-wrap">
-        <img src="./lib/images/ryoanji/01.png" alt="龍安寺のイメージ写真">
-        <p class="cap">「石庭」</p>
-      </div>
-      <div class="text-box">
-        <h2>石庭に数々のトリックが潜む<br>「龍安寺」</h2>
-        <p class="eng">Ryoanji Temple</p>
-      </div>
-    </div>
-    <div id="about" class="wrap">
-      <h2 class="txt-c mb-3 mt-3">世界中の人々が注目する寺院</h2>
-      <div class="layout-01 mb-3">
-        <div class="images-wrap">
-          <img src="./lib/images/ryoanji/02.png" alt="龍安寺のイメージ写真">
-          <p class="cap">「山門」</p>
-        </div>
-        <div class="text-box">
-          <p>1450年に創建された龍安寺ですが、一度焼失してしまった歴史があります。しかし、その後1499年に再建され、その時に今では龍安寺で最も有名な石庭が造られたと伝えられています。<br>かつて天下を統一した豊臣秀吉も、この地を幾度となく訪れ、守っていたと言われており、秀吉の制札が今も残されています。<br>そんな龍安寺の石庭が、世界的に知られるようになったきっかけをご存知でしょうか。イギリスのエリザベス2世が1975年に日本へ訪問した際、龍安寺の拝観を希望し、石庭を絶賛したことが海外のマスコミでも報道されたことをきっかけに龍安寺は世界的に有名になり、1994年には世界文化遺産に指定されました。</p>
-        </div>
-      </div>
-
-      <div class="layout-01 mb-3">
-        <div class="images-wrap">
-          <h2 class="layer">池を中心に<br>彩られた境内</h2>
-          <img src="./lib/images/ryoanji/03.png" alt="龍安寺のイメージ写真">
-          <p class="cap">「鏡容池」</p>
-        </div>
-        <div class="text-box">
-          <p>龍安寺の山門をくぐると、平安時代に貴族が舟を浮かべて歌舞音曲を楽しんでいたと言われる「鏡容池（きょうようち）」という大きな池を中心に池泉回遊式庭園が広がっています。<br>春は池の周りに咲き乱れる桜、夏は水面に花開く色とりどりの睡蓮、秋は鮮やかに色づいた紅葉、冬は雪景色といった四季折々に自然が織りなす美しい風景が鏡容池に映し出されます。<br>この様子から鏡容池という名前がつけられたとも言われていますが、昔は、オシドリの名所であったことから別名「オシドリ池」とも呼ばれています。<br>また、鏡容池の中央にある「弁天島」では、寺院の境内に神社の鳥居が建っているという珍しい光景を見ることができます。<br>美しい花木が水面に映る風景の眺めを楽しみながら、鏡容池の周りをゆっくりとお散歩してみてください。</p>
-        </div>
-      </div>
-
-      <div class="layout-01 mb-3">
-        <div class="images-wrap">
-          <h2 class="layer">神秘的な空間を持つ石庭</h2>
-          <img src="./lib/images/ryoanji/04.png" alt="龍安寺のイメージ写真">
-          <p class="cap">「石庭」</p>
-        </div>
-        <div class="text-box">
-          <p class="mt-2">一面に白砂が敷き詰められ、大小合わせて15個の石が配置された龍安寺の石庭は、数々の謎が秘められていることで有名です。<br>1番の謎は、庭の作者が未だに不明であることです。作庭は、室町時代と推定され、庭石の裏には作者と思われる刻印もありますが、作者を断定するまでには至っていません。<br>そして、15個の石の配置の意図も不明のままであり、様々な説はありますが、見る人の自由な解釈で眺めてみてください。<br>他には、石庭の塀に演出された高低差です。塀の高さに傾斜をつけて遠近法を用いることで、見る人が視覚的に奥行きを感じる造りとなっています。<br>また、土塀の強固さです。高さ2m近くの土塀は、油土塀と言い、菜種油を混ぜて練り合わせた土で作られており、強度を増し、白砂からの照り返し防止にもなります。</p>
-        </div>
-      </div>
-
-      <div class="mb-3">
-        <div class="images-wrap">
-          <h2 class="layer">自分と向き合える場所</h2>
-          <img src="./lib/images/ryoanji/05.png" alt="龍安寺のイメージ写真">
-          <p class="cap">「つくばい」</p>
-        </div>
-          <p class="mt-2">龍安寺の境内で目に留めて頂きたいのが、昔、日本で使用されていた銭の形の「つくばい（手水鉢）」です。水穴を「口」という漢字に見立て、周りの4文字と共用し、時計回りに「吾唯足るを知る」と読み、満足することを知っているものは幸せであるという教えを説いています。<br>季節によって風景を変える鏡容池や見る人によって見方が変わる石庭といった多様性を持つ世界観の龍安寺で、自分自身を見直すきっかけとなるのではないでしょうか。</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="post-info" class="txt-c sec">
-    <div class="wrap">
-      <h2>龍安寺</h2>
-      <p>営業時間：8:00〜16:30（時期によって異なりますので詳しくはHPでご確認ください。）</p>
-      <p>公式HP：<a class="gold" href="http://www.ryoanji.jp/smph/eng/" target="_blank">http://www.ryoanji.jp/smph/eng</a></p>
-      <div class="flex mt-2">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3266.889496132329!2d135.71607471530007!3d35.03449428035008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a82a301cbaa7%3A0xe1ab173e46d78542!2z6b6N5a6J5a-6!5e0!3m2!1sja!2sjp!4v1574745999618!5m2!1sja!2sjp"height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-        <div class="text-wrap txt-l">
-          <p>〒616-8001<br>京都市右京区龍安寺御陵下町13</p>
-          <a class="gold" href="https://goo.gl/maps/ae9yhikorcNJKYLE6" target="_blank">Google Mapsで見る</a>
-          <p class="mt-1">最寄り駅：京福電鉄「龍安寺」下車　徒歩7分<br>最寄りのバス停：市バス「立命館大学前」下車　徒歩7分、「龍安寺前」下車すぐ<br>入場料：大人500円　中高生400円　小学生200円</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- フッター -->
-  <footer id="footer">
-    <div class="wrap flex">
-      <div class="">
-        <div class="images-wrap">
-          <img class="mb-3" src="./lib/images/common/logo_footer.svg" alt="kyotologyのロゴ">
-        </div>
-        <ul class="pc-only">
-          <li><a href="./top.html">トップページ</a></li>
-          <li><a href="./room.html">客室案内</a></li>
-          <li><a href="./floor.html">館内案内</a></li>
-        </ul>
-        <ul class="pc-only">
-          <li><a href="./kyoto.html">京都観光情報</a></li>
-          <li><a href="./top.html#access">アクセス</a></li>
-          <li><a href="./contact.html">お問い合わせ</a></li>
+          <li><a class="item" href="#">en</a></li>
         </ul>
       </div>
-      <ul class="sns-link sp-only">
-        <li class="mb-1"><a href="#"><img src="./lib/images/common/icon_fb.svg" alt="Facebookのアイコン"></a></li>
-        <li><a href="#"><img src="./lib/images/common/icon_inst.svg" alt="Instagramのアイコン"></a></li>
-      </ul>
-    </div>
-    <div class="footer-small">
-      <div class="wrap flex">
-        <ul>
-          <li><a href="./privacy-policy.html">プライバシーポリシー</a></li>
-          <li><a href="#">サイトマップ</a></li>
-        </ul>
-        <small>© 2019 kyotology</small>
+      <div class="fixed-top flex pc-only">
+        <div class="dropdown">
+          <input id="tg-02" class="dropInput-02" type="checkbox">
+          <label for="tg-02" class="dropLabel"><img src="./lib/images/common/icon_earth.svg" alt="地球のアイコン">JP</label>
+          <ul class="menu animation">
+            <!-- <li><a class="item" href="#">JP</a></li> -->
+            <li><a class="item" href="#">en</a></li>
+          </ul>
+        </div>
+        <h1><a href="./top.html"><img src="./lib/images/common/logo_fff.svg" alt="kyotologyロゴ"></a></h1>
       </div>
-    </div>
-  </footer>
-  <!-- フッター終了 -->
-</main>
-<!-- メインコンテンツ終了 -->
+      <div class="fixed-left pc-only">
+        <ul class="sns-link">
+          <li class="mb-1"><a href="#"><img src="./lib/images/common/icon_fb.svg" alt="Facebookのアイコン"></a></li>
+          <li><a href="#"><img src="./lib/images/common/icon_inst.svg" alt="Instagramのアイコン"></a></li>
+        </ul>
+      </div>
+      <div class="fixed-bottom">
+        <div class="booking-btn bg-gold"><a href="#">ご予約はこちら</a></div>
+      </div>
+      <a href="#about" class="scroll top-only fff">Scroll</a>
+      <a href="#" class="pagetop fff">TOP</a>
+      <nav class="drawer-nav">
+        <ul class="drawer-menu">
+          <li><a class="drawer-menu-item" href="./top.html">ホーム<span class="gold">home</span></a></li>
+          <li><a class="drawer-menu-item" href="./room.html">客室案内<span class="gold">Room information</span></a></li>
+          <li><a class="drawer-menu-item" href="./floor.html">館内案内<span class="gold">floor guide</span></a></li>
+          <li><a class="drawer-menu-item" href="./kyoto.html">京都観光情報<span class="gold">Room information</span></a></li>
+          <li>
+            <ul>
+              <li><a class="drawer-menu-item" href="./contact.html">お問い合わせ</a></li>
+              <li><a class="drawer-menu-item" href="./top.html#access">アクセス</a></li>
+            </ul>
+          </li>
+          <li class="booking-btn"><a class="drawer-menu-item strong bg-gold" href="#">ご予約はこちら</a></li>
+        </ul>
+        <div class="dropdown">
+          <input id="tg-03" class="dropInput-03" type="checkbox">
+          <label for="tg-03" class="dropLabel"><img src="./lib/images/common/icon_earth.svg" alt="地球のアイコン">JP</label>
+          <ul class="menu animation">
+            <!-- <li><a class="item" href="#">JP</a></li> -->
+            <li><a class="item" href="#">en</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- ヘッダー終了 -->
 
-<script type="text/javascript" src="./lib/js/jquery.min.js"></script>
-<script type="text/javascript" src="./lib/js/iscroll.js"></script>
-<script type="text/javascript" src="./lib/js/drawer.min.js"></script>
-<script type="text/javascript" src="./lib/js/slick.min.js"></script>
-<script type="text/javascript" src="./lib/js/app.js"></script>
-<script type="text/javascript" src="./lib/js/jquery.bgswitcher.js"></script>
+    <!-- メインコンテンツ -->
+    <main>
+      <section id="post-contnt" class="sec">
+        <div class="layout-01 mb-3">
+          <div class="images-wrap">
+            <img src="./lib/images/ryoanji/01.png" alt="龍安寺のイメージ写真">
+            <p class="cap">「石庭」</p>
+          </div>
+          <div class="text-box">
+            <h2>石庭に数々のトリックが潜む<br>「龍安寺」</h2>
+            <p class="eng">Ryoanji Temple</p>
+          </div>
+        </div>
+        <div id="about" class="wrap">
+          <h2 class="txt-c mb-3 mt-3">世界中の人々が注目する寺院</h2>
+          <div class="layout-01 mb-3">
+            <div class="images-wrap">
+              <img src="./lib/images/ryoanji/02.png" alt="龍安寺のイメージ写真">
+              <p class="cap">「山門」</p>
+            </div>
+            <div class="text-box">
+              <p>
+                1450年に創建された龍安寺ですが、一度焼失してしまった歴史があります。しかし、その後1499年に再建され、その時に今では龍安寺で最も有名な石庭が造られたと伝えられています。<br>かつて天下を統一した豊臣秀吉も、この地を幾度となく訪れ、守っていたと言われており、秀吉の制札が今も残されています。<br>そんな龍安寺の石庭が、世界的に知られるようになったきっかけをご存知でしょうか。イギリスのエリザベス2世が1975年に日本へ訪問した際、龍安寺の拝観を希望し、石庭を絶賛したことが海外のマスコミでも報道されたことをきっかけに龍安寺は世界的に有名になり、1994年には世界文化遺産に指定されました。
+              </p>
+            </div>
+          </div>
+
+          <div class="layout-01 mb-3">
+            <div class="images-wrap">
+              <h2 class="layer">池を中心に<br>彩られた境内</h2>
+              <img src="./lib/images/ryoanji/03.png" alt="龍安寺のイメージ写真">
+              <p class="cap">「鏡容池」</p>
+            </div>
+            <div class="text-box">
+              <p>
+                龍安寺の山門をくぐると、平安時代に貴族が舟を浮かべて歌舞音曲を楽しんでいたと言われる「鏡容池（きょうようち）」という大きな池を中心に池泉回遊式庭園が広がっています。<br>春は池の周りに咲き乱れる桜、夏は水面に花開く色とりどりの睡蓮、秋は鮮やかに色づいた紅葉、冬は雪景色といった四季折々に自然が織りなす美しい風景が鏡容池に映し出されます。<br>この様子から鏡容池という名前がつけられたとも言われていますが、昔は、オシドリの名所であったことから別名「オシドリ池」とも呼ばれています。<br>また、鏡容池の中央にある「弁天島」では、寺院の境内に神社の鳥居が建っているという珍しい光景を見ることができます。<br>美しい花木が水面に映る風景の眺めを楽しみながら、鏡容池の周りをゆっくりとお散歩してみてください。
+              </p>
+            </div>
+          </div>
+
+          <div class="layout-01 mb-3">
+            <div class="images-wrap">
+              <h2 class="layer">神秘的な空間を持つ石庭</h2>
+              <img src="./lib/images/ryoanji/04.png" alt="龍安寺のイメージ写真">
+              <p class="cap">「石庭」</p>
+            </div>
+            <div class="text-box">
+              <p class="mt-2">
+                一面に白砂が敷き詰められ、大小合わせて15個の石が配置された龍安寺の石庭は、数々の謎が秘められていることで有名です。<br>1番の謎は、庭の作者が未だに不明であることです。作庭は、室町時代と推定され、庭石の裏には作者と思われる刻印もありますが、作者を断定するまでには至っていません。<br>そして、15個の石の配置の意図も不明のままであり、様々な説はありますが、見る人の自由な解釈で眺めてみてください。<br>他には、石庭の塀に演出された高低差です。塀の高さに傾斜をつけて遠近法を用いることで、見る人が視覚的に奥行きを感じる造りとなっています。<br>また、土塀の強固さです。高さ2m近くの土塀は、油土塀と言い、菜種油を混ぜて練り合わせた土で作られており、強度を増し、白砂からの照り返し防止にもなります。
+              </p>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <div class="images-wrap">
+              <h2 class="layer">自分と向き合える場所</h2>
+              <img src="./lib/images/ryoanji/05.png" alt="龍安寺のイメージ写真">
+              <p class="cap">「つくばい」</p>
+            </div>
+            <p class="mt-2">龍安寺の境内で目に留めて頂きたいのが、昔、日本で使用されていた銭の形の「つくばい（手水鉢）」です。水穴を「口」という漢字に見立て、周りの4文字と共用し、時計回りに「吾唯足るを知る」と読み、満足することを知っているものは幸せであるという教えを説いています。<br>季節によって風景を変える鏡容池や見る人によって見方が変わる石庭といった多様性を持つ世界観の龍安寺で、自分自身を見直すきっかけとなるのではないでしょうか。</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="post-info" class="txt-c sec">
+        <div class="wrap">
+          <h2>龍安寺</h2>
+          <p>営業時間：8:00〜16:30（時期によって異なりますので詳しくはHPでご確認ください。）</p>
+          <p>公式HP：<a class="gold" href="http://www.ryoanji.jp/smph/eng/" target="_blank">http://www.ryoanji.jp/smph/eng</a></p>
+          <div class="flex mt-2">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3266.889496132329!2d135.71607471530007!3d35.03449428035008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001a82a301cbaa7%3A0xe1ab173e46d78542!2z6b6N5a6J5a-6!5e0!3m2!1sja!2sjp!4v1574745999618!5m2!1sja!2sjp"
+              height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <div class="text-wrap txt-l">
+              <p>〒616-8001<br>京都市右京区龍安寺御陵下町13</p>
+              <a class="gold" href="https://goo.gl/maps/ae9yhikorcNJKYLE6" target="_blank">Google Mapsで見る</a>
+              <p class="mt-1">最寄り駅：京福電鉄「龍安寺」下車　徒歩7分<br>最寄りのバス停：市バス「立命館大学前」下車　徒歩7分、「龍安寺前」下車すぐ<br>入場料：大人500円　中高生400円　小学生200円</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- フッター -->
+      <footer id="footer">
+        <div class="wrap flex">
+          <div class="">
+            <div class="images-wrap">
+              <img class="mb-3" src="./lib/images/common/logo_footer.svg" alt="kyotologyのロゴ">
+            </div>
+            <ul class="pc-only">
+              <li><a href="./top.html">トップページ</a></li>
+              <li><a href="./room.html">客室案内</a></li>
+              <li><a href="./floor.html">館内案内</a></li>
+            </ul>
+            <ul class="pc-only">
+              <li><a href="./kyoto.html">京都観光情報</a></li>
+              <li><a href="./top.html#access">アクセス</a></li>
+              <li><a href="./contact.html">お問い合わせ</a></li>
+            </ul>
+          </div>
+          <ul class="sns-link sp-only">
+            <li class="mb-1"><a href="#"><img src="./lib/images/common/icon_fb.svg" alt="Facebookのアイコン"></a></li>
+            <li><a href="#"><img src="./lib/images/common/icon_inst.svg" alt="Instagramのアイコン"></a></li>
+          </ul>
+        </div>
+        <div class="footer-small">
+          <div class="wrap flex">
+            <ul>
+              <li><a href="./privacy-policy.html">プライバシーポリシー</a></li>
+              <li><a href="#">サイトマップ</a></li>
+            </ul>
+            <small>© 2019 kyotology</small>
+          </div>
+        </div>
+      </footer>
+      <!-- フッター終了 -->
+    </main>
+    <!-- メインコンテンツ終了 -->
+
+    <script type="text/javascript" src="./lib/js/jquery.min.js"></script>
+    <script type="text/javascript" src="./lib/js/iscroll.js"></script>
+    <script type="text/javascript" src="./lib/js/drawer.min.js"></script>
+    <script type="text/javascript" src="./lib/js/slick.min.js"></script>
+    <script type="text/javascript" src="./lib/js/app.js"></script>
+    <script type="text/javascript" src="./lib/js/jquery.bgswitcher.js"></script>
 
 </body>
 
