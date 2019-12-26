@@ -199,7 +199,7 @@ function setToken()
 </ul>
 <ul class="pc-only">
 <li><a href="./kyoto.html">京都観光情報</a></li>
-<li><a href="./top.html#access"></a>アクセス</a></li>
+<li><a href="./top.html#access">アクセス</a></li>
 <li><a href="./contact.html">お問い合わせ</a></li>
 </ul>
 </div>
