@@ -87,18 +87,18 @@
   align-items: center;
 }
 
-#type>.flex .text-box {
+#type>.flex>.text-box {
   margin: 0 3rem;
 }
 
-#type>div>div:nth-child(1) {
-  width: 80%;
-  margin: 3rem auto;
+.slider-03 {
+  width: 50%;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
-#type>div>div:nth-child(1) .text-box {
-  width: 45%;
-  margin: 0 0 0 -3rem;
+.slider-03 li {
+  width: 100%;
 }
 
 @media(max-width:768px) {
