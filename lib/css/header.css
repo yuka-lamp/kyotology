@@ -318,9 +318,13 @@ h1 img {
   /*--スマホたて--*/
   .sp-only h1 {
     position: fixed;
-    top: 20px;
-    left: 10px;
-    z-index: 97;
+    padding: 20px 0 20px 10px;
+    z-index: 93;
+    width: 100%;
+    transition: 1s
+  }
+  .sp-only h1 a img {
+    width: 254px
   }
 }
 
