@@ -3,7 +3,20 @@ footer {
   border-top: 1px solid #454545;
   padding: 3rem 0 0 0;;
   background: #0D0D0D;
-  margin-top: 5rem
+  margin-top: 5rem;
+}
+
+footer, footer p {
+  margin-bottom: .5rem;
+}
+
+footer a {
+  text-transform: capitalize;
+}
+
+footer, footer p, footer ul li a {
+  font-size: 90%;
+  line-height: 1.3rem;
 }
 
 footer small {
@@ -76,12 +89,12 @@ footer .pc-only li:hover a::before {
 @media(max-width:480px) {
   footer .sns-link li {
     position: initial;
-    margin: 2rem 1rem 0 0;
+    margin: 0 1rem 0 0;
     display: inline-block;
   }
 
-  footer .sns-link li {
-    margin:
+  footer .sns-link li:nth-child(2) {
+    margin: 0;
   }
 
   footer .sns-link li a img {
@@ -96,8 +109,8 @@ footer .pc-only li:hover a::before {
     width: 100%
   }
 
-  footer img {
-    margin: 0 auto !important;
+  footer .images-wrap img {
+    margin: 0 auto 2rem auto !important;
     display: block;
   }
 
@@ -114,5 +127,9 @@ footer .pc-only li:hover a::before {
     display: block;
     width: 100%;
     margin-top: 1rem;
+  }
+  footer small {
+    white-space: nowrap;
+    margin: 3px 0 0 0
   }
 }
