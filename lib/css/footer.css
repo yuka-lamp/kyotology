@@ -6,8 +6,22 @@ footer {
   margin-top: 5rem;
 }
 
-footer, footer p {
+footer>.wrap>.flex {
+  width: 100%;
+  align-items: flex-end;
+}
+
+footer>.wrap>.flex {
+  width: 100%;
+  align-items: flex-end;
+}
+
+footer>.wrap>.flex>.pc-only, footer p {
   margin-bottom: .5rem;
+}
+
+footer .images-wrap>img {
+  width: 170px
 }
 
 footer a {

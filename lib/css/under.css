@@ -134,6 +134,10 @@
     margin: -3rem 0 0 0;
     width: 100%
   }
+
+  #type .text-box p:nth-child(3), #type .text-box p:nth-child(4), #type .text-box .image-wrap {
+    margin-left: 1rem!important
+  }
 }
 
 @media(max-width:480px) {
