@@ -232,38 +232,43 @@ function checkToken()
 
 <!-- フッター -->
 <footer id="footer">
-<div class="wrap flex">
-<div class="">
-<div class="images-wrap">
-<img class="mb-2" src="./lib/images/common/logo_footer.svg" alt="kyotologyのロゴ">
-</div>
-<p>京都府京都市東山区大仏南門通<br>大和大路東入3丁目本瓦町672-6</p>
-<p><span class="gold">tel :</span><a href="tel:000-000-0000"> 000-000-0000</a><br><span class="gold">mail:</span><a href="mailto:info@kyotology.com"> info@kyotology.com</a></p>
-<ul class="pc-only mt-1">
-<li><a href="./top.html">ホーム</a></li>
-<li><a href="./room.html">客室案内</a></li>
-<li><a href="./floor.html">館内案内</a></li>
-</ul>
-<ul class="pc-only">
-<li><a href="./kyoto.html">京都観光情報</a></li>
-<li><a href="./top.html#access">アクセス</a></li>
-<li><a href="./contact.html">お問い合わせ</a></li>
-</ul>
-</div>
-<ul class="sns-link sp-only mb-1 mt-2">
-<li class="mb-1"><a href="#"><img src="./lib/images/common/icon_fb.svg" alt="Facebookのアイコン"></a></li>
-<li><a href="#"><img src="./lib/images/common/icon_inst.svg" alt="Instagramのアイコン"></a></li>
-</ul>
-</div>
-<div class="footer-small">
-<div class="wrap flex">
-<ul>
-<li><a href="./privacy-policy.html">プライバシーポリシー</a></li>
-<li><a href="#">サイトマップ</a></li>
-<li><small>© 2019 kyotology</small></li>
-</ul>
-</div>
-</div>
+  <div class="wrap">
+    <div class="">
+      <div class="">
+        <div class="images-wrap">
+          <img class="mb-2" src="./lib/images/common/logo_footer.svg" alt="kyotologyのロゴ">
+        </div>
+        <p>京都府京都市東山区大仏南門通大和大路東入<br>3丁目本瓦町672-6</p>
+        <p><span class="gold">tel :</span><a href="tel:000-000-0000"> 000-000-0000</a><br><span class="gold">mail:</span><a href="mailto:info@kyotology.com"> info@kyotology.com</a></p>
+      </div>
+      <div class="pc-only">
+        <ul class="mt-1">
+          <li><a href="./top.html">ホーム</a></li>
+          <li><a href="./room.html">客室案内</a></li>
+          <li><a href="./floor.html">館内案内</a></li>
+        </ul>
+        <ul>
+          <li><a href="./kyoto.html">京都観光情報</a></li>
+          <li><a href="./top.html#access">アクセス</a></li>
+          <li><a href="./contact.html">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <ul class="sns-link sp-only mb-1 mt-2">
+        <li class="mb-1"><a href="#"><img src="./lib/images/common/icon_fb.svg" alt="Facebookのアイコン"></a></li>
+        <li><a href="#"><img src="./lib/images/common/icon_inst.svg" alt="Instagramのアイコン"></a></li>
+      </ul>
+    </div>
+    <!-- facebook -->
+  </div>
+  <div class="footer-small">
+    <div class="wrap flex">
+      <ul>
+        <li><a href="./privacy-policy.html">プライバシーポリシー</a></li>
+        <li><a href="#">サイトマップ</a></li>
+        <li><small>© 2019 kyotology</small></li>
+      </ul>
+    </div>
+  </div>
 </footer>
 <!-- フッター終了 -->
 </main>
