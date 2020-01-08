@@ -261,8 +261,26 @@
   z-index: -1
 }
 
-#kyoto .wrap:nth-child(3)>div::after {
+#kyoto .wrap:nth-child(4)>div::after {
   display: none
+}
+
+.rank {
+  width: 70%
+}
+
+.rank li {
+  border-right: 1px solid #BAB27C;
+  width: 33%;
+  text-align: center;
+}
+
+.rank li:last-child {
+  border-right: none;
+}
+
+.rank li a {
+  display: block;
 }
 
 @media(max-width:768px) {
@@ -305,6 +323,9 @@
   #kyoto .images-wrap {
     width: 100%;
     margin-bottom: 3rem
+  }
+  .rank {
+    width: 100%
   }
 }
 
