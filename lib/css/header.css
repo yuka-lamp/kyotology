@@ -37,7 +37,7 @@ h3 {
 }
 
 a {
-  cursor : pointer!important;
+  cursor: pointer !important;
 }
 
 /*--------------------------------------------------------------レイアウト*/
@@ -323,6 +323,7 @@ h1 img {
     width: 100%;
     transition: 1s
   }
+
   .sp-only h1 a img {
     width: 254px
   }
@@ -455,7 +456,7 @@ h1 img {
 .fixed-bottom .booking-btn a {
   display: block;
   padding: .5rem 0;
-  letter-spacing: 5px
+  letter-spacing: 5px;
 }
 
 @media(max-width:768px) {
@@ -463,6 +464,7 @@ h1 img {
 }
 
 @media(max-width:480px) {
+
   /*--スマホたて--*/
 }
 
@@ -595,7 +597,7 @@ nav .booking-btn a:hover {
   }
 
   .drawer--right .drawer-nav {
-    right: -24.25rem !important;
+    right: -26.25rem !important;
   }
 
   .drawer--right.drawer-open .drawer-nav {

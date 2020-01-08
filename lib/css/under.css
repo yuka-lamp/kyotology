@@ -31,6 +31,7 @@
 }
 
 @media(max-width:480px) {
+
   /*--スマホたて--*/
   #sub-mv {
     padding: 8rem 0 6rem 0;
@@ -136,7 +137,7 @@
   }
 
   #type .text-box p:nth-child(3), #type .text-box p:nth-child(4), #type .text-box .image-wrap {
-    margin-left: 1rem!important
+    margin-left: 1rem !important
   }
 }
 
@@ -228,7 +229,7 @@
 
 /*--------------------------------------------------------------京都観光情報*/
 #kyoto h2.ttl {
-  margin: 3rem 0 5rem 0
+  margin: 6rem 0 3rem 0
 }
 
 #kyoto .num {
@@ -236,8 +237,8 @@
   color: #BAB27C;
   border: 1px solid #BAB27C;
   padding: 4px 5px 4px 10px;
-  margin-right: 1rem !important;
-  font-size: 80%;
+  margin-bottom: 1rem !important;
+  font-size: 60%;
 }
 
 #kyoto .btn {
@@ -281,7 +282,7 @@
   /*--スマホたて--*/
   #kyoto h2.ttl {
     text-align: center;
-    margin: 3rem 0;
+    margin: 5rem 0 3rem 0;
   }
 
   #kyoto .num {
@@ -439,7 +440,7 @@ h2.layer {
   width: 65%;
 }
 
-#form input,#form .flex>.textarea-wrap textarea {
+#form input, #form .flex>.textarea-wrap textarea {
   width: 100%;
   background: none;
   border: 1px solid #fff;
@@ -486,7 +487,7 @@ h2.layer {
   height: 18px;
 }
 
-#contact input[type='submit']{
+#contact input[type='submit'] {
   border: none;
   display: block;
   width: 100%;
@@ -515,13 +516,13 @@ h2.layer {
     width: 100%;
     margin: .5rem 0;
   }
+
   #contact p.txt-c {
-    text-align:left
+    text-align: left
   }
 }
 
 /*--------------------------------------------------------------プライバシーポリシー*/
-
 #pp h2 {
   border-bottom: solid 2px #BAB27C;
   color: #fff;
