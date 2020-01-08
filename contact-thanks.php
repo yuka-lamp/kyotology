@@ -9,65 +9,65 @@ require 'setting.php';
 $checkToken = checkToken();
 
 if (isset($_POST['shimei'])) {
-    $shimei = $_POST['shimei'];
+$shimei = $_POST['shimei'];
 } else {
-    $shimei = '';
+$shimei = '';
 }
 if (isset($_POST['furi'])) {
-    $furi = $_POST['furi'];
+$furi = $_POST['furi'];
 } else {
-    $furi = '';
+$furi = '';
 }
 if (isset($_POST['mail'])) {
-    $mail = $_POST['mail'];
+$mail = $_POST['mail'];
 } else {
-    $mail = '';
+$mail = '';
 }
 if (isset($_POST['tel'])) {
-    $tel = $_POST['tel'];
+$tel = $_POST['tel'];
 } else {
-    $tel = '';
+$tel = '';
 }
 if (isset($_POST['content'])) {
-    $content = $_POST['content'];
+$content = $_POST['content'];
 } else {
-    $content = '';
+$content = '';
 }
 $form = [
-    'shimei' => $shimei,
-    'furi' => $furi,
-    'mail' => $mail,
-    'tel' => $tel,
-    'content' => $content
+'shimei' => $shimei,
+'furi' => $furi,
+'mail' => $mail,
+'tel' => $tel,
+'content' => $content
 ];
 
 // メール送信
 if ($checkToken) {
-    $sentMail = sendMail($form['mail'], $form);
-    unset($_SESSION['token']);
+$sentMail = sendMail($form['mail'], $form);
+unset($_SESSION['token']);
 }
 
 function sendMail($toMail, $form = [])
 {
-    $mail = new PHPMailer\PHPMailer\PHPMailer();
-    $mail->isSMTP();
-    $mail->SMTPAuth = true;
-    $mail->Host = MAIL_HOST;
-    $mail->Username = MAIL_USERNAME;
-    $mail->Password = MAIL_PASSWORD;
-    $mail->SMTPSecure = MAIL_ENCRPT;
-    $mail->Port = SMTP_PORT;
+$mail = new PHPMailer\PHPMailer\PHPMailer();
+$mail->isSMTP();
+$mail->SMTPAuth = true;
+$mail->Host = MAIL_HOST;
+$mail->Username = MAIL_USERNAME;
+$mail->Password = MAIL_PASSWORD;
+$mail->SMTPSecure = MAIL_ENCRPT;
+$mail->Port = SMTP_PORT;
 
-    // メール内容設定
-    $mail->CharSet = "UTF-8";
-    $mail->Encoding = "base64";
-    $mail->setFrom(MAIL_FROM, MAIL_FROM_NAME);
-    $mail->addAddress($toMail);
-    $mail->addReplyTo(MAIL_FROM, MAIL_FROM_NAME);
-    // $mail->addCC('cc@example.com');
-    // $mail->addBcc('bcc@example.com');
-    $mail->Subject = MAIL_SUBJECT;
-    $body = "
+// メール内容設定
+$mail->CharSet = "UTF-8";
+$mail->Encoding = "base64";
+$mail->setFrom(MAIL_FROM, MAIL_FROM_NAME);
+$mail->addAddress($toMail);
+$mail->addReplyTo(MAIL_FROM, MAIL_FROM_NAME);
+// $mail->addCC('cc@example.com');
+// $mail->addBcc('bcc@example.com');
+$mail->Subject = MAIL_SUBJECT;
+$body = "
 この度は、お問い合わせいただき誠にありがとうございます。
 
 以下の内容でお問い合わせを承りました。
@@ -91,25 +91,25 @@ HOTEL KYOTOLOGY
 TEL: +81 50 3204 4328
 MAIL: info@kyotology.com
 URL: Kyotology.com
-    ";
-    $mail->Body = $body;
+";
+$mail->Body = $body;
 
-    // メール送信の実行
-    if (!$mail->send()) {
-        return 'Mailer Error: '.$mail->ErrorInfo;
-    } else {
-        return 'ok';
-    }
+// メール送信の実行
+if (!$mail->send()) {
+return 'Mailer Error: '.$mail->ErrorInfo;
+} else {
+return 'ok';
+}
 }
 
 // チェックトークン
 function checkToken()
 {
-    if (empty($_SESSION['token']) || ($_SESSION['token'] !== $_POST['token'])) {
-        return false;
-    } else {
-        return true;
-    }
+if (empty($_SESSION['token']) || ($_SESSION['token'] !== $_POST['token'])) {
+return false;
+} else {
+return true;
+}
 }
 ?>
 
@@ -232,43 +232,43 @@ function checkToken()
 
 <!-- フッター -->
 <footer id="footer">
-  <div class="wrap">
-    <div class="">
-      <div class="">
-        <div class="images-wrap">
-          <img class="mb-2" src="./lib/images/common/logo_footer.svg" alt="kyotologyのロゴ">
-        </div>
-        <p>京都府京都市東山区大仏南門通大和大路東入<br>3丁目本瓦町672-6</p>
-        <p><span class="gold">tel :</span><a href="tel:000-000-0000"> 000-000-0000</a><br><span class="gold">mail:</span><a href="mailto:info@kyotology.com"> info@kyotology.com</a></p>
-      </div>
-      <div class="pc-only">
-        <ul class="mt-1">
-          <li><a href="./top.html">ホーム</a></li>
-          <li><a href="./room.html">客室案内</a></li>
-          <li><a href="./floor.html">館内案内</a></li>
-        </ul>
-        <ul>
-          <li><a href="./kyoto.html">京都観光情報</a></li>
-          <li><a href="./top.html#access">アクセス</a></li>
-          <li><a href="./contact.html">お問い合わせ</a></li>
-        </ul>
-      </div>
-      <ul class="sns-link sp-only mb-1 mt-2">
-        <li class="mb-1"><a href="#"><img src="./lib/images/common/icon_fb.svg" alt="Facebookのアイコン"></a></li>
-        <li><a href="#"><img src="./lib/images/common/icon_inst.svg" alt="Instagramのアイコン"></a></li>
-      </ul>
-    </div>
-    <!-- facebook -->
-  </div>
-  <div class="footer-small">
-    <div class="wrap flex">
-      <ul>
-        <li><a href="./privacy-policy.html">プライバシーポリシー</a></li>
-        <li><a href="#">サイトマップ</a></li>
-        <li><small>© 2019 kyotology</small></li>
-      </ul>
-    </div>
-  </div>
+<div class="wrap">
+<div class="">
+<div class="">
+<div class="images-wrap">
+<img class="mb-2" src="./lib/images/common/logo_footer.svg" alt="kyotologyのロゴ">
+</div>
+<p>京都府京都市東山区大仏南門通大和大路東入<br>3丁目本瓦町672-6</p>
+<p><span class="gold">tel :</span><a href="tel:000-000-0000"> 000-000-0000</a><br><span class="gold">mail:</span><a href="mailto:info@kyotology.com"> info@kyotology.com</a></p>
+</div>
+<div class="pc-only">
+<ul class="mt-1">
+<li><a href="./top.html">ホーム</a></li>
+<li><a href="./room.html">客室案内</a></li>
+<li><a href="./floor.html">館内案内</a></li>
+</ul>
+<ul>
+<li><a href="./kyoto.html">京都観光情報</a></li>
+<li><a href="./top.html#access">アクセス</a></li>
+<li><a href="./contact.html">お問い合わせ</a></li>
+</ul>
+</div>
+<ul class="sns-link sp-only mb-1 mt-2">
+<li class="mb-1"><a href="#"><img src="./lib/images/common/icon_fb.svg" alt="Facebookのアイコン"></a></li>
+<li><a href="#"><img src="./lib/images/common/icon_inst.svg" alt="Instagramのアイコン"></a></li>
+</ul>
+</div>
+<!-- facebook -->
+</div>
+<div class="footer-small">
+<div class="wrap flex">
+<ul>
+<li><a href="./privacy-policy.html">プライバシーポリシー</a></li>
+<li><a href="#">サイトマップ</a></li>
+<li><small>© 2019 kyotology</small></li>
+</ul>
+</div>
+</div>
 </footer>
 <!-- フッター終了 -->
 </main>

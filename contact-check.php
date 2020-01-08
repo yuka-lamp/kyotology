@@ -3,29 +3,29 @@ session_start();
 session_regenerate_id(true);
 
 if (isset($_POST['shimei'])) {
-    $shimei = $_POST['shimei'];
+$shimei = $_POST['shimei'];
 } else {
-    $shimei = '';
+$shimei = '';
 }
 if (isset($_POST['furi'])) {
-    $furi = $_POST['furi'];
+$furi = $_POST['furi'];
 } else {
-    $furi = '';
+$furi = '';
 }
 if (isset($_POST['mail'])) {
-    $mail = $_POST['mail'];
+$mail = $_POST['mail'];
 } else {
-    $mail = '';
+$mail = '';
 }
 if (isset($_POST['tel'])) {
-    $tel = $_POST['tel'];
+$tel = $_POST['tel'];
 } else {
-    $tel = '';
+$tel = '';
 }
 if (isset($_POST['content'])) {
-    $content = $_POST['content'];
+$content = $_POST['content'];
 } else {
-    $content = '';
+$content = '';
 }
 
 setToken();
@@ -33,8 +33,8 @@ setToken();
 // ワンタイムトークン発行
 function setToken()
 {
-    $token = rtrim(base64_encode(openssl_random_pseudo_bytes(32)), '=');
-    $_SESSION['token'] = $token;
+$token = rtrim(base64_encode(openssl_random_pseudo_bytes(32)), '=');
+$_SESSION['token'] = $token;
 }
 
 ?>
