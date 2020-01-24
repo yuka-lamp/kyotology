@@ -3,8 +3,8 @@ ini_set('display_errors', 'off');
 session_start();
 session_regenerate_id(true);
 
-require 'vendor/autoload.php';
-require 'setting.php';
+require './vendor/autoload.php';
+require './setting.php';
 
 $checkToken = checkToken();
 
@@ -44,7 +44,47 @@ $form = [
 // メール送信
 if ($checkToken) {
 $sentMail = sendMail($form['mail'], $form);
+$sentMail = sendAdminMail($form);
 unset($_SESSION['token']);
+}
+
+function sendAdminMail($form = [])
+{
+$mail = new PHPMailer\PHPMailer\PHPMailer();
+$mail->isSMTP();
+$mail->SMTPAuth = true;
+$mail->Host = MAIL_HOST;
+$mail->Username = MAIL_USERNAME;
+$mail->Password = MAIL_PASSWORD;
+$mail->SMTPSecure = MAIL_ENCRPT;
+$mail->Port = SMTP_PORT;
+
+// メール内容設定
+$mail->CharSet = "UTF-8";
+$mail->Encoding = "base64";
+$mail->setFrom(MAIL_FROM, MAIL_FROM_NAME);
+$mail->addAddress(MAIL_FROM);
+$mail->addReplyTo($form['mail'], $form['shimei']);
+$mail->Subject = MAIL_SUBJECT_ADMIN;
+$body = "
+以下の内容でお問い合わせがありました。
+■お問い合わせ内容
+------------------------
+お名前：{$form['shimei']}
+フリガナ：{$form['furi']}
+メールアドレス：{$form['mail']}
+お電話番号：{$form['tel']}
+お問い合わせ内容：{$form['content']}
+------------------------
+";
+$mail->Body = $body;
+
+// メール送信の実行
+if (!$mail->send()) {
+return 'Mailer Error: '.$mail->ErrorInfo;
+} else {
+return 'ok';
+}
 }
 
 function sendMail($toMail, $form = [])
@@ -64,8 +104,6 @@ $mail->Encoding = "base64";
 $mail->setFrom(MAIL_FROM, MAIL_FROM_NAME);
 $mail->addAddress($toMail);
 $mail->addReplyTo(MAIL_FROM, MAIL_FROM_NAME);
-// $mail->addCC('cc@example.com');
-// $mail->addBcc('bcc@example.com');
 $mail->Subject = MAIL_SUBJECT;
 $body = "
 この度は、お問い合わせいただき誠にありがとうございます。
@@ -90,8 +128,7 @@ HOTEL KYOTOLOGY
 京都市東山区大仏南門通大和大路東入三丁目本瓦町672番6
 TEL: +81 50 3204 4328
 MAIL: info@kyotology.com
-URL: Kyotology.com
-";
+URL: kyotology.com";
 $mail->Body = $body;
 
 // メール送信の実行
@@ -117,6 +154,7 @@ return true;
 <html lang="ja">
 
 <head>
+<meta name="robots" content="noindex">
 <meta charset="UTF-8">
 <title>お問い合わせ完了｜KYOTOLOGY</title>
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -239,7 +277,7 @@ return true;
 <img class="mb-2" src="./lib/images/common/logo_footer.svg" alt="kyotologyのロゴ">
 </div>
 <p>京都府京都市東山区大仏南門通大和大路東入<br>3丁目本瓦町672-6</p>
-<p><span class="gold">tel :</span><a href="tel:000-000-0000"> 000-000-0000</a><br><span class="gold">mail:</span><a href="mailto:info@kyotology.com"> info@kyotology.com</a></p>
+<p><span class="gold">tel :</span><a href="tel:+81-50-3204-4328"> +81 50 3204 4328</a><br><span class="gold">mail:</span><a href="mailto:info@kyotology.com"> info@kyotology.com</a></p>
 </div>
 <div class="pc-only">
 <ul class="mt-1">
@@ -264,7 +302,8 @@ return true;
 <div class="wrap flex">
 <ul>
 <li><a href="./privacy-policy.html">プライバシーポリシー</a></li>
-<li><a href="#">サイトマップ</a></li>
+<li><a href="./terms.html">特定商取引法に基づく表示</a></li>
+<li><a href="./sitemap.html">サイトマップ</a></li>
 <li><small>© 2019 kyotology</small></li>
 </ul>
 </div>

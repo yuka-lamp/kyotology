@@ -42,8 +42,9 @@ $_SESSION['token'] = $token;
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+<meta name="robots" content="noindex">
 <meta charset="UTF-8">
-<title>お問い合わせ内容客員｜KYOTOLOGY</title>
+<title>お問い合わせ内容確認｜KYOTOLOGY</title>
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <link rel="stylesheet" href="./lib/css/header.css">
@@ -193,7 +194,7 @@ $_SESSION['token'] = $token;
 <img class="mb-2" src="./lib/images/common/logo_footer.svg" alt="kyotologyのロゴ">
 </div>
 <p>京都府京都市東山区大仏南門通<br>大和大路東入3丁目本瓦町672-6</p>
-<p><span class="gold">tel :</span><a href="tel:000-000-0000"> 000-000-0000</a><br><span class="gold">mail:</span><a href="mailto:info@kyotology.com"> info@kyotology.com</a></p>
+<p><span class="gold">tel :</span><a href="tel:+81-50-3204-4328"> +81 50 3204 4328</a><br><span class="gold">mail:</span><a href="mailto:info@kyotology.com"> info@kyotology.com</a></p>
 <ul class="pc-only mt-1">
 <li><a href="./top.html">ホーム</a></li>
 <li><a href="./room.html">客室案内</a></li>
@@ -214,7 +215,8 @@ $_SESSION['token'] = $token;
 <div class="wrap flex">
 <ul>
 <li><a href="./privacy-policy.html">プライバシーポリシー</a></li>
-<li><a href="#">サイトマップ</a></li>
+<li><a href="./terms.html">特定商取引法に基づく表示</a></li>
+<li><a href="./sitemap.html">サイトマップ</a></li>
 <li><small>© 2019 kyotology</small></li>
 </ul>
 </div>

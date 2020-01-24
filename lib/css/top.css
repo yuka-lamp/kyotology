@@ -13,7 +13,6 @@
 
 #mv .inner {
   width: 200px;
-  background: rgb(255, 255, 255, .8);
   text-align: center;
   position: absolute;
   top: 50%;
@@ -22,8 +21,13 @@
 }
 
 #mv .inner img {
-  width: 135px;
+  width: 180px;
   margin: 60px auto;
+}
+
+.vegas-animation-kenburns {
+    animation: kenburns ease-out;
+    transition-duration: 1000s
 }
 
 @media(max-width:768px) {
@@ -132,18 +136,18 @@
   box-sizing: border-box;
 }
 
-#floor ul li .image-wrap:nth-child(1) {
-  background: url('../images/top/floor_01.png');
+#floor ul li a figure .image-wrap {
+  background: url('../images/top/floor_03.png');
   background-size: cover;
 }
 
-#floor ul li .image-wrap:nth-child(2) {
+#floor ul li:nth-child(2) a figure .image-wrap {
   background: url('../images/top/floor_02.png');
   background-size: cover;
 }
 
-#floor ul li .image-wrap:nth-child(3) {
-  background: url('../images/top/floor_03.png');
+#floor ul li:nth-child(3) a figure .image-wrap {
+  background: url('../images/top/floor_01.png');
   background-size: cover;
 }
 
@@ -260,6 +264,14 @@ figure.effect-bubba:hover p {
 
 #access ul li:last-child {
   border-right: none;
+}
+
+#access ul li img {
+  width: 130px
+}
+
+#access iframe {
+  filter: grayscale(90%);
 }
 
 #map {
