@@ -354,7 +354,8 @@ h1 img {
 }
 
 .sns-link li:nth-child(1) {
-  top: 47%;
+  /* top: 47%; */
+  top:50%
 }
 
 .sns-link li:nth-child(2) {

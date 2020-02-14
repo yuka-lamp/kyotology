@@ -96,6 +96,15 @@
   margin: 0 3rem;
 }
 
+#type .image-wrap {
+  height: 120px;
+
+}
+
+#type .image-wrap>img {
+  height: 100%
+}
+
 .slider-03 {
   width: 50%;
   box-sizing: border-box;

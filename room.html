@@ -15,6 +15,7 @@
 <link rel="stylesheet" href="./lib/css/common.min.css">
 <link rel="stylesheet" href="./lib/css/drawer.min.css">
 <link rel="stylesheet" href="./lib/css/aos.css">
+<link rel="stylesheet" href="./lib/css/modal.css">
 <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Noto+Sans+JP:400,500&display=swap" rel="stylesheet">
 </head>
 
@@ -38,33 +39,33 @@
 <span class="sr-only">toggle navigation</span>
 <span class="drawer-hamburger-icon"></span>
 </button>
-<div class="dropdown top-only pc-only">
-<input id="tg-01" class="dropInput-01" type="checkbox">
-<label for="tg-01" class="dropLabel"><img src="./lib/images/common/icon_earth.svg" alt="地球のアイコン">JP</label>
-<ul class="menu animation">
-<!-- <li><a class="item" href="#">JP</a></li> -->
-<li><a class="item" href="#">en</a></li>
-</ul>
-</div>
-<div class="fixed-top flex pc-only">
-<div class="dropdown">
+<!-- <div class="dropdown">
 <input id="tg-02" class="dropInput-02" type="checkbox">
 <label for="tg-02" class="dropLabel"><img src="./lib/images/common/icon_earth.svg" alt="地球のアイコン">JP</label>
 <ul class="menu animation">
-<!-- <li><a class="item" href="#">JP</a></li> -->
+<li><a class="item" href="#">JP</a></li>
 <li><a class="item" href="#">en</a></li>
 </ul>
-</div>
+</div> -->
+<div class="fixed-top flex pc-only">
+  <!-- <div class="dropdown">
+  <input id="tg-02" class="dropInput-02" type="checkbox">
+  <label for="tg-02" class="dropLabel"><img src="./lib/images/common/icon_earth.svg" alt="地球のアイコン">JP</label>
+  <ul class="menu animation">
+  <li><a class="item" href="#">JP</a></li>
+  <li><a class="item" href="#">en</a></li>
+  </ul>
+  </div> -->
 <h1><a href="./top.html"><img src="./lib/images/common/logo_fff.svg" alt="kyotologyロゴ"></a></h1>
 </div>
 <div class="fixed-left pc-only">
 <ul class="sns-link">
-<li class="mb-1"><a href="#"><img src="./lib/images/common/icon_fb.svg" alt="Facebookのアイコン"></a></li>
-<li><a href="#"><img src="./lib/images/common/icon_inst.svg" alt="Instagramのアイコン"></a></li>
+<li class="mb-1"><a href="https://www.facebook.com/kyotology/" target="_blank"><img src="./lib/images/common/icon_fb.svg" alt="Facebookのアイコン"></a></li>
+<!-- <li><a href="#"><img src="./lib/images/common/icon_inst.svg" alt="Instagramのアイコン"></a></li> -->
 </ul>
 </div>
 <div class="fixed-bottom">
-<div class="booking-btn bg-gold"><a href="#">ご予約はこちら</a></div>
+<div class="booking-btn bg-gold"><a href="http://www.booking.com/Share-mP9UCe" target="_blank">ご予約はこちら</a></div>
 </div>
 <a href="#about" class="scroll top-only fff">Scroll</a>
 <a href="#" class="pagetop fff">TOP</a>
@@ -80,16 +81,16 @@
 <li><a class="drawer-menu-item" href="./top.html#access">アクセス</a></li>
 </ul>
 </li>
-<li class="booking-btn"><a class="drawer-menu-item strong bg-gold" href="#">ご予約はこちら</a></li>
+<li class="booking-btn"><a class="drawer-menu-item strong bg-gold" href="http://www.booking.com/Share-mP9UCe" target="_blank">ご予約はこちら</a></li>
 </ul>
-<div class="dropdown">
-<input id="tg-03" class="dropInput-03" type="checkbox">
-<label for="tg-03" class="dropLabel"><img src="./lib/images/common/icon_earth.svg" alt="地球のアイコン">JP</label>
+<!-- <div class="dropdown">
+<input id="tg-02" class="dropInput-02" type="checkbox">
+<label for="tg-02" class="dropLabel"><img src="./lib/images/common/icon_earth.svg" alt="地球のアイコン">JP</label>
 <ul class="menu animation">
-<!-- <li><a class="item" href="#">JP</a></li> -->
+<li><a class="item" href="#">JP</a></li>
 <li><a class="item" href="#">en</a></li>
 </ul>
-</div>
+</div> -->
 </nav>
 </header>
 <!-- ヘッダー終了 -->
@@ -105,7 +106,7 @@
 <div class="wrap">
 <div class="layout-01">
 <div class="text-box fade-down">
-<h2 class="under-line">癒やしと温かみのある<br>特別な隠れ家</h2>
+<h2>癒やしと温かみのある<br>特別な隠れ家</h2>
 <!-- <p class="eng">Room information</p> -->
 </div>
 <p class="fade-down">旅の目的や予算に合わせて選べる5種類のお部屋をご用意致しました。<Br>お庭が広がり、自然の美しさを心ゆくまで体感できるお部屋です。旅先にいながらも自宅のようにゆったりとした癒やしの空間をご提供致します。</p>
@@ -118,11 +119,18 @@
 <div class="text-box">
 <h2 class="under-line">スーペリアキング <br class="sp-only">中庭付き</h2>
 <!-- <p class="eng">Superior King With courtyard</p> -->
-<p>目の前に広がるお庭を眺めるリラックスした時間をお過ごしいただけます。お部屋の中でも”京都”を体感いただけます。</p>
-<p class="mt-2">人数 <span class="gold">/</span> 1〜2名　部屋のサイズ <span class="gold">/</span> 20㎡　<br>金額 <span class="gold">/</span> ¥14,000</p>
-<div class="image-wrap ml-2 mt-2">
-<img src="./lib/images/room/a_fig.png" alt="客室の図面">
+<!-- <p>目の前に広がるお庭を眺めるリラックスした時間をお過ごしいただけます。お部屋の中でも”京都”を体感いただけます。</p> -->
+<p class="mt-1">人数 <span class="gold">/</span> 1〜2名　部屋のサイズ <span class="gold">/</span> 20㎡</p>
+<div class="content">
+    <a class="js-modal-open-01" href=""><img src="./lib/images/room/a_fig.svg" alt="客室の図面"></a>
 </div>
+<div class="modal js-modal-01 image-wrap mt-2">
+    <div class="modal__bg js-modal-close-01"></div>
+    <div class="modal__content">
+        <p><img src="./lib/images/room/a_fig.svg" alt="客室の図面"></p>
+        <a class="js-modal-close-01 mt-1" href="">✕</a>
+    </div><!--modal__inner-->
+</div><!--modal-->
 </div>
 <ul class="slider-03 mb-0">
 <li><img src="./lib/images/room/a/01.png" alt="客室のイメージ写真"></li>
@@ -137,11 +145,18 @@
 <div class="text-box">
 <h2 class="under-line">スーペリアキング</h2>
 <!-- <p class="eng">Superior King With courtyard</p> -->
-<p>目の前に広がるお庭を眺めるリラックスした時間をお過ごしいただけます。お部屋の中でも”京都”を体感いただけます。</p>
-<p class="mt-2">人数 <span class="gold">/</span> 1〜2名　部屋のサイズ <span class="gold">/</span> 20㎡　<br>金額 <span class="gold">/</span> ¥14,000</p>
-<div class="image-wrap ml-2 mt-2">
-<img src="./lib/images/room/b_fig.png" alt="客室の図面">
+<!-- <p>目の前に広がるお庭を眺めるリラックスした時間をお過ごしいただけます。お部屋の中でも”京都”を体感いただけます。</p> -->
+<p class="mt-1">人数 <span class="gold">/</span> 1〜2名　部屋のサイズ <span class="gold">/</span> 20㎡</p>
+<div class="content">
+    <a class="js-modal-open-02" href=""><img src="./lib/images/room/b_fig.svg" alt="客室の図面"></a>
 </div>
+<div class="modal js-modal-02 image-wrap mt-2">
+    <div class="modal__bg js-modal-close-02"></div>
+    <div class="modal__content">
+        <p><img src="./lib/images/room/b_fig.svg" alt="客室の図面"></p>
+        <a class="js-modal-close-02 mt-1" href="">✕</a>
+    </div><!--modal__inner-->
+</div><!--modal-->
 </div>
 <ul class="slider-03 mb-0">
 <li><img src="./lib/images/room/a/01.png" alt="客室のイメージ写真"></li>
@@ -156,11 +171,18 @@
 <div class="text-box">
 <h2 class="under-line">デラックスキング <br>プライベートガーデン付き</h2>
 <!-- <p class="eng">Superior King With courtyard</p> -->
-<p>目の前に広がるお庭を眺めるリラックスした時間をお過ごしいただけます。お部屋の中でも”京都”を体感いただけます。</p>
-<p class="mt-2">人数 <span class="gold">/</span> 1〜2名　部屋のサイズ <span class="gold">/</span> 25㎡　<br>金額 <span class="gold">/</span> ¥16,000</p>
-<div class="image-wrap ml-2 mt-2">
-<img src="./lib/images/room/c_fig.png" alt="客室の図面">
+<!-- <p>目の前に広がるお庭を眺めるリラックスした時間をお過ごしいただけます。お部屋の中でも”京都”を体感いただけます。</p> -->
+<p class="mt-1">人数 <span class="gold">/</span> 1〜2名　部屋のサイズ <span class="gold">/</span></p>
+<div class="content">
+    <a class="js-modal-open-03" href=""><img src="./lib/images/room/c_fig.svg" alt="客室の図面"></a>
 </div>
+<div class="modal js-modal-03 image-wrap mt-2">
+    <div class="modal__bg js-modal-close-03"></div>
+    <div class="modal__content">
+        <p><img src="./lib/images/room/c_fig.svg" alt="客室の図面"></p>
+        <a class="js-modal-close-03 mt-1" href="">✕</a>
+    </div><!--modal__inner-->
+</div><!--modal-->
 </div>
 <ul class="slider-03 mb-0">
 <li><img src="./lib/images/room/c/01.png" alt="客室のイメージ写真"></li>
@@ -175,11 +197,18 @@
 <div class="text-box">
 <h2 class="under-line">デラックスキング <br class="sp-only">バスタブ付き</h2>
 <!-- <p class="eng">Superior King With courtyard</p> -->
-<p>目の前に広がるお庭を眺めるリラックスした時間をお過ごしいただけます。お部屋の中でも”京都”を体感いただけます。</p>
-<p class="mt-2">人数 <span class="gold">/</span> 1〜2名　部屋のサイズ <span class="gold">/</span> 31㎡　<br>金額 <span class="gold">/</span> ¥18,000</p>
-<div class="image-wrap ml-2 mt-2">
-<img src="./lib/images/room/d_fig.png" alt="客室の図面">
+<!-- <p>目の前に広がるお庭を眺めるリラックスした時間をお過ごしいただけます。お部屋の中でも”京都”を体感いただけます。</p> -->
+<p class="mt-1">人数 <span class="gold">/</span> 1〜2名　部屋のサイズ <span class="gold">/</span> 31㎡</p>
+<div class="content">
+    <a class="js-modal-open-04" href=""><img src="./lib/images/room/d_fig.svg" alt="客室の図面"></a>
 </div>
+<div class="modal js-modal-04 image-wrap mt-2">
+    <div class="modal__bg js-modal-close-04"></div>
+    <div class="modal__content">
+        <p><img src="./lib/images/room/d_fig.svg" alt="客室の図面"></p>
+        <a class="js-modal-close-04 mt-1" href="">✕</a>
+    </div><!--modal__inner-->
+</div><!--modal-->
 </div>
 <ul class="slider-03 mb-0">
 <li><img src="./lib/images/room/d/01.png" alt="客室のイメージ写真"></li>
@@ -194,11 +223,18 @@
 <div class="text-box">
 <h2 class="under-line">スイートルーム</h2>
 <!-- <p class="eng">Superior King With courtyard</p> -->
-<p>目の前に広がるお庭を眺めるリラックスした時間をお過ごしいただけます。お部屋の中でも”京都”を体感いただけます。</p>
-<p class="mt-2">人数 <span class="gold">/</span> 1〜2名　部屋のサイズ <span class="gold">/</span> 35㎡　<br>金額 <span class="gold">/</span> ¥20,000</p>
-<div class="image-wrap ml-2 mt-2">
-<img src="./lib/images/room/e_fig.png" alt="客室の図面">
+<!-- <p>目の前に広がるお庭を眺めるリラックスした時間をお過ごしいただけます。お部屋の中でも”京都”を体感いただけます。</p> -->
+<p class="mt-1">人数 <span class="gold">/</span> 1〜2名　部屋のサイズ <span class="gold">/</span> 35㎡</p>
+<div class="content">
+    <a class="js-modal-open-05" href=""><img src="./lib/images/room/e_fig.svg" alt="客室の図面"></a>
 </div>
+<div class="modal js-modal-05 image-wrap mt-2">
+    <div class="modal__bg js-modal-close-05"></div>
+    <div class="modal__content">
+        <p><img src="./lib/images/room/e_fig.svg" alt="客室の図面"></p>
+        <a class="js-modal-close-05 mt-1" href="">✕</a>
+    </div><!--modal__inner-->
+</div><!--modal-->
 </div>
 <ul class="slider-03 mb-0">
 <li><img src="./lib/images/room/e/01.png" alt="客室のイメージ写真"></li>
@@ -290,8 +326,8 @@
 </ul>
 </div>
 <ul class="sns-link sp-only mb-1 mt-2">
-<li class="mb-1"><a href="#"><img src="./lib/images/common/icon_fb.svg" alt="Facebookのアイコン"></a></li>
-<li><a href="#"><img src="./lib/images/common/icon_inst.svg" alt="Instagramのアイコン"></a></li>
+<li class="mb-1"><a href="https://www.facebook.com/kyotology/" target="_blank"><img src="./lib/images/common/icon_fb.svg" alt="Facebookのアイコン"></a></li>
+<!-- <li><a href="#"><img src="./lib/images/common/icon_inst.svg" alt="Instagramのアイコン"></a></li> -->
 </ul>
 </div>
 <!-- facebook -->
@@ -322,6 +358,58 @@
 AOS.init({
 duration: 3000,
 });
+if(!navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)){
+$(function(){
+    $('.js-modal-open-01').on('click',function(){
+        $('.js-modal-01').fadeIn();
+        return false;
+    });
+    $('.js-modal-close-01').on('click',function(){
+        $('.js-modal-01').fadeOut();
+        return false;
+    });
+});
+$(function(){
+    $('.js-modal-open-02').on('click',function(){
+        $('.js-modal-02').fadeIn();
+        return false;
+    });
+    $('.js-modal-close-02').on('click',function(){
+        $('.js-modal-02').fadeOut();
+        return false;
+    });
+});
+$(function(){
+    $('.js-modal-open-03').on('click',function(){
+        $('.js-modal-03').fadeIn();
+        return false;
+    });
+    $('.js-modal-close-03').on('click',function(){
+        $('.js-modal-03').fadeOut();
+        return false;
+    });
+});
+$(function(){
+    $('.js-modal-open-04').on('click',function(){
+        $('.js-modal-04').fadeIn();
+        return false;
+    });
+    $('.js-modal-close-04').on('click',function(){
+        $('.js-modal-04').fadeOut();
+        return false;
+    });
+});
+$(function(){
+    $('.js-modal-open-05').on('click',function(){
+        $('.js-modal-05').fadeIn();
+        return false;
+    });
+    $('.js-modal-close-05').on('click',function(){
+        $('.js-modal-05').fadeOut();
+        return false;
+    });
+});
+}
 </script>
 
 </body>
