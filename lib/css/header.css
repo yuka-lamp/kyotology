@@ -1,5 +1,5 @@
 body {
-  font-family: 'Didact Gothic', sans-serif, 'Noto Sans JP', 'Yu Gothic Medium', '游ゴシック Medium', YuGothic, '游ゴシック体', 'ヒラギノ角ゴ Pro W3', 'メイリオ', sans-serif;
+  font-family: 'HelveticaNeue', 'Noto Sans JP', 'Yu Gothic Medium', '游ゴシック Medium', YuGothic, '游ゴシック体', 'ヒラギノ角ゴ Pro W3', 'メイリオ', sans-serif;
   font-size: 100%;
   letter-spacing: .1rem;
   position: relative;
@@ -120,7 +120,7 @@ main {
 .eng {
   font-size: 90%;
   color: #BAB27C;
-  margin: 0 0 2rem 1rem
+  margin: 0 0 2rem 0
 }
 
 .layout-01 {
@@ -138,7 +138,7 @@ main {
 }
 
 .text-box p:nth-child(3), .text-box p:nth-child(4) {
-  margin-left: 2rem
+  /* margin-left: 2rem */
 }
 
 .text-box p:last-child br {

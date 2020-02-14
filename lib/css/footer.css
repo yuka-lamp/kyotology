@@ -101,6 +101,9 @@ footer .pc-only li:hover a::before {
 }
 
 @media(max-width:480px) {
+  footer .sns-link {
+    height: 18px
+  }
   footer .sns-link li {
     position: initial;
     margin: 0 1rem 0 0;
