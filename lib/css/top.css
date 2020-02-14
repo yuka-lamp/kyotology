@@ -334,8 +334,15 @@ figure.effect-bubba:hover p {
 @media(max-width:768px) {
 
   /*--スマホよこ--*/
+  #kyoto {
+    display: block;
+  }
+  #kyoto img {
+    margin: 0 auto
+  }
   #kyoto .text-box {
-    margin: 3rem 1rem 0 1rem
+    width: 100%;
+    margin: 2rem 0
   }
 }
 

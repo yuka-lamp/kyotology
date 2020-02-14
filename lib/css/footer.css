@@ -150,3 +150,14 @@ footer .pc-only li:hover a::before {
     margin: 3px 0 0 0
   }
 }
+@media(max-width:768px) {
+  /*--スマホよこ--*/
+  footer>.flex iframe {
+    margin: 1rem 0 0 0!important
+  }
+}
+
+/*-------------------------------FBフィード調整*/
+.fb_iframe_widget span,.fb_iframe_widget iframe {
+  height: 314px!important
+}
