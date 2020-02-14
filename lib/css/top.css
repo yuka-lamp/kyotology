@@ -25,17 +25,17 @@
   margin: 60px auto;
 }
 
-.vegas-animation-kenburns {
-    animation: kenburns ease-out;
-    transition-duration: 1000s
-}
-
 @media(max-width:768px) {
   /*--スマホよこ--*/
 }
 
 @media(max-width:480px) {
+
   /*--スマホたて--*/
+  #mv .inner img {
+    width: 150px;
+    margin: 60px auto;
+  }
 }
 
 /*--------------------------------------------------------------アバウト*/
@@ -254,7 +254,6 @@ figure.effect-bubba:hover p {
 }
 
 /*--------------------------------------------------------------アクセス*/
-
 #access ul li {
   border-right: 1px solid #454545;
   width: 33%;
@@ -304,6 +303,7 @@ figure.effect-bubba:hover p {
     width: 100%;
     margin-bottom: 3rem
   }
+
   #room .room-mv {
     margin-bottom: 3rem
   }
