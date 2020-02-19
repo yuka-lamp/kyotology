@@ -7,12 +7,17 @@
 .content {
   margin: 0 auto;
   padding: 2rem 0 0 0;
-  height: 220px
+  height: 320px;
+}
+
+.content a {
+  display: flex;
+  align-items: center;
+  height: 100%
 }
 
 .content img {
   width: auto;
-  height: 100%;
 }
 
 .modal {
@@ -52,10 +57,11 @@
 }
 
 
-@media(max-width:760px) {
+@media(max-width:780px) {
   .content img {
-    width: auto;
-    height: 100%;
     margin: 0 auto
+  }
+  .content {
+    height: auto
   }
 }

@@ -89,16 +89,16 @@
 }
 
 #type>.flex {
-  align-items: center;
+  align-items: flex-start;
 }
 
 #type>.flex>.text-box {
   margin: 0 3rem;
+  width: 30%
 }
 
 #type .image-wrap {
   height: 120px;
-
 }
 
 #type .image-wrap>img {
@@ -106,14 +106,18 @@
 }
 
 .slider-03 {
-  width: 50%;
+  width: 60%;
   box-sizing: border-box;
   overflow: hidden;
 }
 
 .slider-03 li {
   width: 100%;
-  margin: 0 5px
+  margin: 0 5px;
+}
+
+.slick-slide img {
+  object-fit: cover;
 }
 
 @media(max-width:768px) {
