@@ -9,6 +9,10 @@ body {
   text-transform: uppercase;
 }
 
+:focus {
+  outline: 0
+}
+
 p {
   font-size: 14px;
   letter-spacing: .05rem;

@@ -118,6 +118,7 @@
 
 .slick-slide img {
   object-fit: cover;
+  width: 100%
 }
 
 @media(max-width:768px) {

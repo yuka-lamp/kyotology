@@ -62,6 +62,9 @@
     margin: 0 auto
   }
   .content {
-    height: auto
+    height: auto!important
+  }
+  .content a {
+    height: auto!important
   }
 }
