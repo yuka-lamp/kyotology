@@ -85,7 +85,8 @@
   }
 
   #about .wrap>div:nth-child(2) .images-wrap {
-    margin: 0 auto
+    margin: 0 auto;
+    z-index: -1
   }
 
   #about .wrap>div:nth-child(4) p, #about .wrap>div:nth-child(5) p {
@@ -98,6 +99,11 @@
 }
 
 /*--------------------------------------------------------------客室案内*/
+#room h2 {
+  font-size: 170%;
+  margin: 0;
+}
+
 #room .room-mv {
   background: url('../images/top/room_01.png');
   background-size: cover;
@@ -124,7 +130,7 @@
     margin-top: 2rem
   }
 
-  #room .images-wrap {
+  #room .images-wrap,#kyoto .images-wrap {
     margin: 2rem 0
   }
 
@@ -179,9 +185,16 @@
     margin-bottom: 0
   }
 
+  #access>.wrap>p.txt-c {
+    text-align: left;
+  }
+
+  #access>.wrap>p.txt-c br {
+    display: none
+  }
+
   #room .text-box:last-child {
     width: 100%;
-    margin-bottom: 3rem
   }
 
   #room .room-mv {

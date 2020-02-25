@@ -98,6 +98,9 @@ main {
 
 @media(max-width:768px) {
   /*--スマホよこ--*/
+  .sec {
+    padding: 20px 0
+  }
 }
 
 @media(max-width:480px) {
@@ -227,9 +230,6 @@ main {
 
 @media(max-width:768px) {
   /*--スマホよこ--*/
-  .images-wrap {
-    width: 100%;
-  }
 }
 
 @media(max-width:480px) {
@@ -237,6 +237,10 @@ main {
   /*--スマホたて--*/
   .layout-01 {
     flex-wrap: wrap;
+  }
+
+  .images-wrap {
+    width: 100%;
   }
 
   .text-box {

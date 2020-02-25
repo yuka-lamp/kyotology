@@ -129,7 +129,7 @@
   position: absolute;
   top: 50%;
   margin-top: -34px;
-  z-index: 99
+  z-index: 98
 }
 
 #type .slider-03 .next-arrow {
@@ -195,6 +195,16 @@
 }
 
 /*--------------------------------------------------------------館内案内*/
+
+#inside  h3 {
+  font-size: 20px
+}
+
+#inside  h3>span {
+  font-size: 14px;
+  display: block;
+}
+
 #inside ul li {
   width: 30%
 }

@@ -220,8 +220,8 @@ return true;
 <nav class="drawer-nav">
 <ul class="drawer-menu">
 <li><a class="drawer-menu-item" href="./top.html">ホーム<span class="gold">home</span></a></li>
-<li><a class="drawer-menu-item" href="./room.html">客室案内<span class="gold">Room information</span></a></li>
-<li><a class="drawer-menu-item" href="./floor.html">館内案内<span class="gold">floor guide</span></a></li>
+<li><a class="drawer-menu-item" href="./room.html">客室のご案内<span class="gold">Room information</span></a></li>
+<li><a class="drawer-menu-item" href="./floor.html">館内のご案内<span class="gold">floor guide</span></a></li>
 <li><a class="drawer-menu-item" href="./kyoto.html">京都観光情報<span class="gold">Room information</span></a></li>
 <li>
 <ul>
@@ -282,8 +282,8 @@ return true;
 <div class="pc-only">
 <ul class="mt-1">
 <li><a href="./top.html">ホーム</a></li>
-<li><a href="./room.html">客室案内</a></li>
-<li><a href="./floor.html">館内案内</a></li>
+<li><a href="./room.html">客室のご案内</a></li>
+<li><a href="./floor.html">館内のご案内</a></li>
 </ul>
 <ul>
 <li><a href="./kyoto.html">京都観光情報</a></li>
