@@ -37,12 +37,20 @@
     margin: 60px auto;
   }
 }
+
 /*--------------------------------------------------------------メインビジュアル下テキスト*/
 #txt p {
   line-height: 4;
   font-size: 16px
 }
 
+@media(max-width:480px) {
+
+  /*--スマホたて--*/
+  #txt p {
+    text-align: left;
+  }
+}
 
 /*--------------------------------------------------------------アバウト*/
 #about .wrap>div:nth-child(1) {}
@@ -57,22 +65,31 @@
 }
 
 #about .images-wrap p {
-  margin-top: 1rem
+  margin-top: 2rem
+}
+
+#about .wrap>div:nth-child(4) p, #about .wrap>div:nth-child(5) p {
+  margin: 2rem 2rem 0 2rem
 }
 
 @media(max-width:480px) {
-  #about .wrap>div:nth-child(1) .text-box, #about .wrap>div:nth-child(3) .text-box {
+  #about .wrap>div:nth-child(1) .text-box, #about .wrap>div:nth-child(2) .text-box, #about .wrap>div:nth-child(3) .text-box {
     margin-top: -1rem;
-  }
-
-  #about .wrap>div:nth-child(2) .images-wrap {
-    margin: -1rem -7rem 0 0;
-    z-index: -1;
   }
 
   #about .wrap>div:nth-child(2) {
     width: 100%;
-    margin: 0 0 5rem 0;
+    flex-flow: row-reverse;
+    flex-wrap: wrap;
+    flex-flow: column-reverse;
+  }
+
+  #about .wrap>div:nth-child(2) .images-wrap {
+    margin: 0 auto
+  }
+
+  #about .wrap>div:nth-child(4) p, #about .wrap>div:nth-child(5) p {
+    margin: 1rem 0 0 0
   }
 
   #about .wrap>div:nth-child(4) .flex div:last-child {
@@ -90,10 +107,6 @@
   margin-bottom: 5rem
 }
 
-#room .text-box:last-child {
-  width: 55%
-}
-
 @media(max-width:768px) {
 
   /*--スマホよこ--*/
@@ -105,11 +118,6 @@
 @media(max-width:480px) {
 
   /*--スマホたて--*/
-  #room .text-box:last-child {
-    width: 100%;
-    margin-bottom: 0rem
-  }
-
   #room .btn {
     text-align: center;
     ;
@@ -123,140 +131,6 @@
   #room .layout-01 {
     margin: 0
   }
-}
-
-/*--------------------------------------------------------------館内案内*/
-#floor {}
-
-#floor ul li {
-  width: 80%;
-  height: 500px;
-  position: relative;
-}
-
-#floor ul li .image-wrap {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  overflow: hidden;
-  box-sizing: border-box;
-}
-
-#floor ul li a figure .image-wrap {
-  background: url('../images/top/floor_03.png');
-  background-size: cover;
-}
-
-#floor ul li:nth-child(2) a figure .image-wrap {
-  background: url('../images/top/floor_02.png');
-  background-size: cover;
-}
-
-#floor ul li:nth-child(3) a figure .image-wrap {
-  background: url('../images/top/floor_01.png');
-  background-size: cover;
-}
-
-figure.effect-bubba {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  box-sizing: border-box;
-  margin: 0;
-  position: relative;
-}
-
-figure.effect-bubba img {
-  opacity: 0.7;
-  -webkit-transition: opacity 0.35s;
-  transition: opacity 0.35s;
-}
-
-figure.effect-bubba:hover img {
-  opacity: 0.4;
-}
-
-figcaption {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-}
-
-figure.effect-bubba figcaption::before,
-figure.effect-bubba figcaption::after {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  bottom: 30px;
-  left: 30px;
-  content: '';
-  opacity: 0;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-}
-
-figure.effect-bubba figcaption::before {
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  -webkit-transform: scale(0, 1);
-  transform: scale(0, 1);
-}
-
-figure.effect-bubba figcaption::after {
-  border-right: 1px solid #fff;
-  border-left: 1px solid #fff;
-  -webkit-transform: scale(1, 0);
-  transform: scale(1, 0);
-}
-
-figure.effect-bubba p {
-  padding: 20px 2.5em;
-  opacity: 0;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(0, 20px, 0);
-  transform: translate3d(0, 20px, 0);
-  position: absolute;
-  top: 40%;
-  width: 100%;
-  overflow: hidden;
-  box-sizing: border-box;
-}
-
-figure.effect-bubba:hover figcaption::before,
-figure.effect-bubba:hover figcaption::after {
-  opacity: 1;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
-
-figure.effect-bubba:hover h2,
-figure.effect-bubba:hover p {
-  opacity: 1;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-
-.slick-dots li button:before {
-  content: '' !important;
-  width: 23px !important;
-  height: 3px !important;
-  background: #BAB27C !important;
-}
-
-.slick-prev, .slick-next {
-  bottom: 0 !important
-}
-
-.slick-prev {
-  left: 50px !important;
-}
-
-.slick-next {
-  right: 50px !important;
 }
 
 /*--------------------------------------------------------------アクセス*/
@@ -313,40 +187,4 @@ figure.effect-bubba:hover p {
   #room .room-mv {
     margin-bottom: 3rem
   }
-}
-
-/*--------------------------------------------------------------アクセス*/
-#kyoto {
-  align-items: center;
-}
-
-#kyoto .text-box {
-  margin: 0 13% 0 5rem
-}
-
-#kyoto .text-box p:nth-child(3) {
-  margin: 0 0 0 2rem;
-}
-
-#kyoto .btn {
-  text-align: center;
-}
-
-@media(max-width:768px) {
-
-  /*--スマホよこ--*/
-  #kyoto {
-    display: block;
-  }
-  #kyoto img {
-    margin: 0 auto
-  }
-  #kyoto .text-box {
-    width: 100%;
-    margin: 2rem 0
-  }
-}
-
-@media(max-width:480px) {
-  /*--スマホたて--*/
 }

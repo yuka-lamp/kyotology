@@ -142,6 +142,10 @@ main {
   align-items: center;
 }
 
+.images-wrap {
+  width: 50%;
+}
+
 .text-box {
   width: 40%;
 }
@@ -160,10 +164,12 @@ main {
 
 .btn {
   position: relative;
-  letter-spacing: .3rem;
-  padding: 1rem 0;
-  display: block;
+  letter-spacing: .4rem;
+  padding: .8rem 2rem .8rem 2rem;
+  display: inline-block;
   font-size: 14px;
+  border: 1px solid #BAB27C;
+  margin-top: 2rem
 }
 
 .btn a {
@@ -221,6 +227,9 @@ main {
 
 @media(max-width:768px) {
   /*--スマホよこ--*/
+  .images-wrap {
+    width: 100%;
+  }
 }
 
 @media(max-width:480px) {

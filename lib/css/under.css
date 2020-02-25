@@ -88,17 +88,17 @@
   margin-bottom: 5rem!important
 }
 
-#type>.flex {
+#type .wrap>.flex {
   align-items: flex-start;
 }
 
-#type>.flex>.text-box {
+#type .wrap>.flex>.text-box {
   margin: 0 3rem;
   width: 30%
 }
 
 #type .image-wrap {
-  height: 120px;
+  height: 220px;
 }
 
 #type .image-wrap>img {
@@ -121,14 +121,33 @@
   width: 100%
 }
 
+#type .slider-03 {
+  position: relative;
+}
+
+#type .slider-03 .slick-arrow {
+  position: absolute;
+  top: 50%;
+  margin-top: -34px;
+  z-index: 99
+}
+
+#type .slider-03 .next-arrow {
+  right: 15px
+}
+
+#type .slider-03 .prev-arrow {
+  left: 15px
+}
+
 @media(max-width:768px) {
 
   /*--スマホよこ--*/
-  #type>.flex {
+  #type .wrap>.flex {
     flex-wrap: wrap;
   }
 
-  #type>.flex .text-box {
+  #type .wrap>.flex .text-box {
     margin: 0 15px 3rem 15px;
     width: 100%
   }
@@ -137,20 +156,20 @@
     margin: 2rem 0 0 2rem
   }
 
-  #type>div>div:nth-child(1) .images-wrap {
+  #type .wrap>div>div:nth-child(1) .images-wrap {
     z-index: -1
   }
 
-  #type>div>div:nth-child(1) .images-wrap img {
+  #type .wrap>div>div:nth-child(1) .images-wrap img {
     margin: -8rem 0 0px 55px;
   }
 
-  #type>div>div:nth-child(2) {
+  #type .wrap>div>div:nth-child(2) {
     width: 100%;
     flex-wrap: wrap;
   }
 
-  #type>div>div:nth-child(2) .text-box {
+  #type .wrap>div>div:nth-child(2) .text-box {
     margin: -3rem 0 0 0;
     width: 100%
   }
@@ -169,7 +188,7 @@
 @media(max-width:480px) {
 
   /*--スマホたて--*/
-  #type>div>div:nth-child(1) .text-box {
+  #type .wrap>div>div:nth-child(1) .text-box {
     width: 100%;
     margin: 0 0 0 -15px;
   }
@@ -182,40 +201,6 @@
 
 #inside ul li img {
   width: 100%
-}
-
-#inside ul li:nth-child(1) {
-  margin-top: -3rem
-}
-
-#inside ul li:nth-child(2) {
-  margin-top: -1.5rem
-}
-
-#gallery ul li {
-  height: 190px !important;
-  background-position: center !important;
-  background-size: cover !important;
-}
-
-#gallery .photo-01 {
-  background: url('../images/floor/slide_01.png')
-}
-
-#gallery .photo-02 {
-  background: url('../images/floor/slide_02.png')
-}
-
-#gallery .photo-03 {
-  background: url('../images/floor/slide_03.png')
-}
-
-#gallery .photo-04 {
-  background: url('../images/floor/slide_04.png')
-}
-
-#gallery .photo-05 {
-  background: url('../images/floor/slide_05.png')
 }
 
 #facility ul {
